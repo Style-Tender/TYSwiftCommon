@@ -103,10 +103,10 @@ var tkBottomMargin : CGFloat {
     return tkIsFullScreenIphone ? 34 : 0
 }
 
-func TYLog<T>(message : T, file : String = #file, funcName : String = #function, lineNum : Int = #line) {
+func TYLog<T>(message : T, file : String? = #file, lineNum : Int? = #line) {
 #if DEBUG
-    let fileName = (file as NSString).lastPathComponent
-    print("\(fileName):(\(lineNum))-\(message)")
+    let fileName = (file! as NSString).lastPathComponent
+    print("\(fileName):(\(lineNum!))-\(message)")
 #endif
 }
 
