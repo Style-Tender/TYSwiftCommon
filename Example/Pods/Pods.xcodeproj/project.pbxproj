@@ -28,6 +28,7 @@
 		3D0FFBDE258903C700EAC556 /* TYTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FFBDD258903C700EAC556 /* TYTextField.swift */; };
 		3D0FFBE525890CCF00EAC556 /* TYPhoneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FFBE425890CCF00EAC556 /* TYPhoneUtils.swift */; };
 		3D0FFBEB2589108B00EAC556 /* DeviceModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D0FFBEA2589108B00EAC556 /* DeviceModel.plist */; };
+		3D0FFBF1258921A200EAC556 /* TYExChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FFBF0258921A200EAC556 /* TYExChange.swift */; };
 		45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0440F4381D065FED6264EFBCDB7960 /* MultipartFormData.swift */; };
 		47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24B13480173106997D3F6538CDE3CD /* ServerTrustEvaluation.swift */; };
 		4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26220434118FCFC30E4850800AC3068 /* ParameterEncoder.swift */; };
@@ -136,6 +137,7 @@
 		3D0FFBDD258903C700EAC556 /* TYTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYTextField.swift; sourceTree = "<group>"; };
 		3D0FFBE425890CCF00EAC556 /* TYPhoneUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYPhoneUtils.swift; sourceTree = "<group>"; };
 		3D0FFBEA2589108B00EAC556 /* DeviceModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DeviceModel.plist; path = ../../TYSwiftCommon/Assets/DeviceModel.plist; sourceTree = "<group>"; };
+		3D0FFBF0258921A200EAC556 /* TYExChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYExChange.swift; sourceTree = "<group>"; };
 		3F401E181BEA002337E464DED414F440 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		401A0C3C3516540407583753D10DEB2B /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		4388F96485F322CF010F9CA6AF089C46 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				3B38562740BBC5D49F4581EEF4BD0ED9 /* TYNavigationBarManager.swift */,
 				7EBFB8959A8B138BF899F5101FF07B15 /* TYStorageUtils.swift */,
 				3D0FFBE425890CCF00EAC556 /* TYPhoneUtils.swift */,
+				3D0FFBF0258921A200EAC556 /* TYExChange.swift */,
 			);
 			name = Utils;
 			path = TYSwiftCommon/Classes/Utils;
@@ -733,6 +736,7 @@
 				70A1432DAB1EBFC297578B17FA811116 /* TYAppInfoUtils.swift in Sources */,
 				F90F73BD31073B42B223E489D94E70B8 /* TYButton.swift in Sources */,
 				7C079B300E1F2ED572F07B5E55E0A86B /* TYColor.swift in Sources */,
+				3D0FFBF1258921A200EAC556 /* TYExChange.swift in Sources */,
 				7202ECC290F9FD35054BFB3B97BF88D6 /* TYCommon.swift in Sources */,
 				BB863F9777BF4F9EA94817CB0E42E8B7 /* TYHttpHelper.swift in Sources */,
 				58CD5101EE6F4C498E8C2707C757CD6B /* TYImage.swift in Sources */,
