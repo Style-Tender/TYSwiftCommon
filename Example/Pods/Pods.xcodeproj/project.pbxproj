@@ -25,6 +25,9 @@
 		2C73A08CD282F91BC287C187611AC740 /* NSDictionary+TYDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 10E7603A7A3E7A4197E0C601EB1CE0BD /* NSDictionary+TYDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		350789E441A32C57BAE33B2E3672BF16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F401E181BEA002337E464DED414F440 /* Foundation.framework */; };
 		381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72312136F76CCB5AC50BCDD37ED4A2 /* SessionDelegate.swift */; };
+		3D0FFBDE258903C700EAC556 /* TYTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FFBDD258903C700EAC556 /* TYTextField.swift */; };
+		3D0FFBE525890CCF00EAC556 /* TYPhoneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FFBE425890CCF00EAC556 /* TYPhoneUtils.swift */; };
+		3D0FFBEB2589108B00EAC556 /* DeviceModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D0FFBEA2589108B00EAC556 /* DeviceModel.plist */; };
 		45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0440F4381D065FED6264EFBCDB7960 /* MultipartFormData.swift */; };
 		47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24B13480173106997D3F6538CDE3CD /* ServerTrustEvaluation.swift */; };
 		4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26220434118FCFC30E4850800AC3068 /* ParameterEncoder.swift */; };
@@ -128,8 +131,11 @@
 		33341751FADAA729315C1E6670E4F882 /* Pods-TYSwiftCommon_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TYSwiftCommon_Tests-Info.plist"; sourceTree = "<group>"; };
 		333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		349B2325F6647FEE3C9209201FF5D4C2 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		39D4D130D25DAE6EE5FEA7E19FA58257 /* TYSwiftCommon.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TYSwiftCommon.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		39D4D130D25DAE6EE5FEA7E19FA58257 /* TYSwiftCommon.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TYSwiftCommon.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3B38562740BBC5D49F4581EEF4BD0ED9 /* TYNavigationBarManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYNavigationBarManager.swift; sourceTree = "<group>"; };
+		3D0FFBDD258903C700EAC556 /* TYTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYTextField.swift; sourceTree = "<group>"; };
+		3D0FFBE425890CCF00EAC556 /* TYPhoneUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYPhoneUtils.swift; sourceTree = "<group>"; };
+		3D0FFBEA2589108B00EAC556 /* DeviceModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DeviceModel.plist; path = ../../TYSwiftCommon/Assets/DeviceModel.plist; sourceTree = "<group>"; };
 		3F401E181BEA002337E464DED414F440 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		401A0C3C3516540407583753D10DEB2B /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		4388F96485F322CF010F9CA6AF089C46 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
@@ -141,18 +147,18 @@
 		51D45A2AF061C99B2355F19EC47243D9 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
 		5A51515830AB9FE94E01DF6F48146153 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		5BEF4837C47DFB74B73C8B82A591E94C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		60B149BBBC3FB611484C59B358564AFD /* Pods_TYSwiftCommon_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TYSwiftCommon_Example.framework; path = "Pods-TYSwiftCommon_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B149BBBC3FB611484C59B358564AFD /* Pods_TYSwiftCommon_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYSwiftCommon_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F2B90B6F80D8F30747B3E178F5528F /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		630CB4475A9E69F0BC4400AF125CC1B0 /* Pods-TYSwiftCommon_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TYSwiftCommon_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		65D4A34C5A5AA915D001E922E88D11F8 /* TYSwiftCommon-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TYSwiftCommon-Info.plist"; sourceTree = "<group>"; };
 		673CB7AF23C7E1475678C8CCC286CF41 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		6BA10F718609454A9168DE8EF2C7C617 /* TYButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYButton.swift; sourceTree = "<group>"; };
 		6E5885BEE0EA90E038422555C29243EE /* TYSwiftCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYSwiftCommon.release.xcconfig; sourceTree = "<group>"; };
-		6E6FFAA93A7EE509B3773EC3311C2FFF /* Pods_TYSwiftCommon_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TYSwiftCommon_Tests.framework; path = "Pods-TYSwiftCommon_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6FFAA93A7EE509B3773EC3311C2FFF /* Pods_TYSwiftCommon_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYSwiftCommon_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7197951AB8559109A9F40B71A85C843E /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		755AF7541EEA1582F0889D38D3846BF4 /* NSArray+TYArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TYArray.m"; sourceTree = "<group>"; };
-		776017D55E4EB6226DD2B6C7D2375090 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		776017D55E4EB6226DD2B6C7D2375090 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		79BFAE4F0928F95479DE70C637654FC5 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		79EB40D0E4136A2EBA646F9A9D0DA652 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		7AADD5DBB1649F55422F3E1098C4AB07 /* Pods-TYSwiftCommon_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TYSwiftCommon_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -168,11 +174,11 @@
 		998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		9C1741D7ACD43E5D0E9DBE557F396581 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
 		9C44EFF4AE1CC95C361F6A007EDBD6E7 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4153404C4C0A47E701390CEDAB4A093 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
 		A6C7835E68040437D6D9B62F30614EF0 /* TYString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYString.swift; sourceTree = "<group>"; };
 		A6F2B77F50C8E86FDD27C5A573013C07 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		A8193223FD2AFED3B204775298FC533A /* TYSwiftCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TYSwiftCommon.framework; path = TYSwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8193223FD2AFED3B204775298FC533A /* TYSwiftCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TYSwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8981CE18C72F7829A215FDEBD6AE56B /* Pods-TYSwiftCommon_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TYSwiftCommon_Tests.modulemap"; sourceTree = "<group>"; };
 		A8FE8F3101C9778B8E4A9873DF471182 /* Pods-TYSwiftCommon_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYSwiftCommon_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B05F31F6AE8884A45FFCB1857E26C650 /* Pods-TYSwiftCommon_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TYSwiftCommon_Example-Info.plist"; sourceTree = "<group>"; };
@@ -191,7 +197,7 @@
 		E2EB7E5EB2918A785D5F0BF6ADA8306E /* TYSwiftCommon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TYSwiftCommon.modulemap; sourceTree = "<group>"; };
 		E5FE3698865F39A76388FF0F9990387A /* TYHttpHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYHttpHelper.swift; sourceTree = "<group>"; };
 		E7CC0A271AC1EB4B7CCB13A994F48D6B /* Pods-TYSwiftCommon_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYSwiftCommon_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EA88C61785B28ABAB3835FAB81A8D0E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EA88C61785B28ABAB3835FAB81A8D0E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EB865ABF7C31488620C11F05ACFC33CC /* TYView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYView.swift; sourceTree = "<group>"; };
 		EF813B763CA0B3A66AFF82BCACF8A557 /* TYSwiftCommon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TYSwiftCommon-dummy.m"; sourceTree = "<group>"; };
 		F43DFB0A067881554C0CF2E83093E1D6 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
@@ -277,6 +283,7 @@
 				E5FE3698865F39A76388FF0F9990387A /* TYHttpHelper.swift */,
 				3B38562740BBC5D49F4581EEF4BD0ED9 /* TYNavigationBarManager.swift */,
 				7EBFB8959A8B138BF899F5101FF07B15 /* TYStorageUtils.swift */,
+				3D0FFBE425890CCF00EAC556 /* TYPhoneUtils.swift */,
 			);
 			name = Utils;
 			path = TYSwiftCommon/Classes/Utils;
@@ -327,6 +334,7 @@
 				A6C7835E68040437D6D9B62F30614EF0 /* TYString.swift */,
 				EB865ABF7C31488620C11F05ACFC33CC /* TYView.swift */,
 				4D1C89FBCC1F5494C33C747DF821E09E /* TYViewController.swift */,
+				3D0FFBDD258903C700EAC556 /* TYTextField.swift */,
 			);
 			name = Category;
 			path = TYSwiftCommon/Classes/Category;
@@ -388,7 +396,6 @@
 				20097F794E1A1791AB97EBE230264E61 /* Validation.swift */,
 				5A6F22EC0F5633257B85B6E660A2165F /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -442,6 +449,7 @@
 		C06B913EDD88B03D0842306904C527D6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
+				3D0FFBEA2589108B00EAC556 /* DeviceModel.plist */,
 				12DD86204DB49D7BFA652207C7AC1A37 /* TYSwiftCommon */,
 			);
 			name = "Development Pods";
@@ -636,6 +644,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0FFBEB2589108B00EAC556 /* DeviceModel.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,10 +740,12 @@
 				1894901A88B6A14783AEF406E092D1E0 /* TYLabel.swift in Sources */,
 				9C161077AE04745EED775FC801CD5B14 /* TYNavigationBarManager.swift in Sources */,
 				A5F4FEC0BE30B1F979A02DDE815752DD /* TYStorageUtils.swift in Sources */,
+				3D0FFBDE258903C700EAC556 /* TYTextField.swift in Sources */,
 				1A01CD06C8AD3CDAE7D285F6CBE5F846 /* TYString.swift in Sources */,
 				503C196C3EA38FBDF80A6B37D5C5B353 /* TYSwiftCommon-dummy.m in Sources */,
 				52F033C81E186C4B04ED8012057B8F73 /* TYView.swift in Sources */,
 				F524DFFB7ECCB32F03E31414168EEF8F /* TYViewController.swift in Sources */,
+				3D0FFBE525890CCF00EAC556 /* TYPhoneUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,8 +832,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

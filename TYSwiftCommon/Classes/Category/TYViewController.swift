@@ -25,4 +25,20 @@ extension UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
     
+    ///模态出半透明的控制器
+    func ty_presentTransparent(vc:UIViewController,animate:Bool,completion:(()->Void)?){
+        vc.view.backgroundColor = rgba(0, 0, 0, 0.5)
+        vc.modalPresentationStyle = .overCurrentContext
+        self.modalPresentationStyle = .currentContext
+        self.present(vc, animated: animate, completion: completion)
+    }
+    
+    ///pop自己
+    func ty_popSelf() {
+        if self.navigationController?.viewControllers.count >= 3 {
+            var vcs = self.navigationController?.viewControllers
+            vcs?.remove(at: vcs?.index(of: self) ?? 0)
+            self.navigationController?.setViewControllers(vcs, animated: false)
+        }
+    }
 }
