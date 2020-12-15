@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "NSArray+TYArray.h"
+#import "NSDictionary+TYDictionary.h"
 
 FOUNDATION_EXPORT double TYSwiftCommonVersionNumber;
 FOUNDATION_EXPORT const unsigned char TYSwiftCommonVersionString[];

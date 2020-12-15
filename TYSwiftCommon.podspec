@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TYSwiftCommon'
-  s.version          = '1.1.0'
+  s.version          = '1.0.0'
   s.summary          = '自用的一个开发库，包含常见的使用方法'
 
 # This description is used to generate tags and improve search results.
@@ -31,6 +31,5 @@ TODO: Add long description of the pod here.
   
   s.source_files = 'TYSwiftCommon/Classes/**/*'
   s.dependency 'Alamofire', '~> 5.4.0'
-  s.dependency 'ByebyeUnicode', '~> 1.1.0'
   
 end
