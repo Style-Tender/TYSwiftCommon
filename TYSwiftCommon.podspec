@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TYSwiftCommon'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TYSwiftCommon.'
+  s.version          = '1.1.0'
+  s.summary          = '自用的一个开发库，包含常见的使用方法'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -26,17 +26,9 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '785072254@qq.com' => 'tianyu@blackvision.net' }
   s.source           = { :git => 'https://github.com/785072254@qq.com/TYSwiftCommon.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '9.0'
-
+  s.ios.deployment_target = '11.0'
   s.source_files = 'TYSwiftCommon/Classes/**/*'
+  s.dependency 'Alamofire', '~> 5.4.0'
+  s.dependency 'ByebyeUnicode', '~> 1.1.0'
   
-  # s.resource_bundles = {
-  #   'TYSwiftCommon' => ['TYSwiftCommon/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

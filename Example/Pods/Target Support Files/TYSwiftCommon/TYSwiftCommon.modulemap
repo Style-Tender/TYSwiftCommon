@@ -1,0 +1,6 @@
+framework module TYSwiftCommon {
+  umbrella header "TYSwiftCommon-umbrella.h"
+
+  export *
+  module * { export * }
+}

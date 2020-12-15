@@ -1,0 +1,16 @@
+PODS:
+  - TYSwiftCommon (0.1.0)
+
+DEPENDENCIES:
+  - TYSwiftCommon (from `../`)
+
+EXTERNAL SOURCES:
+  TYSwiftCommon:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TYSwiftCommon: 79fcc48a6131a34f013ea6dbe15d5660dbb93051
+
+PODFILE CHECKSUM: 2e47370f1af696c7141ac3d49f1c78602abd01f5
+
+COCOAPODS: 1.9.1

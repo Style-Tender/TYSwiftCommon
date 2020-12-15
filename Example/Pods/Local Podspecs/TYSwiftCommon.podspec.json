@@ -1,0 +1,22 @@
+{
+  "name": "TYSwiftCommon",
+  "version": "0.1.0",
+  "summary": "A short description of TYSwiftCommon.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/785072254@qq.com/TYSwiftCommon",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "785072254@qq.com": "tianyu@blackvision.net"
+  },
+  "source": {
+    "git": "https://github.com/785072254@qq.com/TYSwiftCommon.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "TYSwiftCommon/Classes/**/*"
+}
