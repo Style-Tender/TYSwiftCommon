@@ -21,12 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/785072254@qq.com/TYSwiftCommon'
+  s.homepage         = 'https://github.com/Style-Tender/TYSwiftCommon'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '785072254@qq.com' => 'tianyu@blackvision.net' }
-  s.source           = { :git => 'https://github.com/785072254@qq.com/TYSwiftCommon.git', :tag => s.version.to_s }
+  s.author           = { 'Style-Tender' => '785072254@qq.com' }
+  s.source           = { :git => 'https://github.com/Style-Tender/TYSwiftCommon.git', :tag => s.version.to_s }
+  
   s.ios.deployment_target = '11.0'
+  
   s.source_files = 'TYSwiftCommon/Classes/**/*'
   s.dependency 'Alamofire', '~> 5.4.0'
   s.dependency 'ByebyeUnicode', '~> 1.1.0'

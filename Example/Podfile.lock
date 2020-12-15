@@ -1,16 +1,27 @@
 PODS:
-  - TYSwiftCommon (0.1.0)
+  - Alamofire (5.4.0)
+  - ByebyeUnicode (1.1.0)
+  - TYSwiftCommon (1.1.0):
+    - Alamofire (~> 5.4.0)
+    - ByebyeUnicode (~> 1.1.0)
 
 DEPENDENCIES:
   - TYSwiftCommon (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ByebyeUnicode
 
 EXTERNAL SOURCES:
   TYSwiftCommon:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TYSwiftCommon: 79fcc48a6131a34f013ea6dbe15d5660dbb93051
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  ByebyeUnicode: 517bc2fc166129f2de7acdd31704b97f83eed5e9
+  TYSwiftCommon: 345ee630740b54357a39b82d6be404bffe0b768a
 
-PODFILE CHECKSUM: 2e47370f1af696c7141ac3d49f1c78602abd01f5
+PODFILE CHECKSUM: 469e3bf0515133189d9e63ff6ea6c88449bc6320
 
 COCOAPODS: 1.9.1

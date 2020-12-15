@@ -1,22 +1,30 @@
 {
   "name": "TYSwiftCommon",
-  "version": "0.1.0",
-  "summary": "A short description of TYSwiftCommon.",
+  "version": "1.1.0",
+  "summary": "自用的一个开发库，包含常见的使用方法",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/785072254@qq.com/TYSwiftCommon",
+  "homepage": "https://github.com/Style-Tender/TYSwiftCommon",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "785072254@qq.com": "tianyu@blackvision.net"
+    "Style-Tender": "785072254@qq.com"
   },
   "source": {
-    "git": "https://github.com/785072254@qq.com/TYSwiftCommon.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Style-Tender/TYSwiftCommon.git",
+    "tag": "1.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "11.0"
   },
-  "source_files": "TYSwiftCommon/Classes/**/*"
+  "source_files": "TYSwiftCommon/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 5.4.0"
+    ],
+    "ByebyeUnicode": [
+      "~> 1.1.0"
+    ]
+  }
 }

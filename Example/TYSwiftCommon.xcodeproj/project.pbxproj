@@ -313,10 +313,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TYSwiftCommon_Example/Pods-TYSwiftCommon_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ByebyeUnicode/ByebyeUnicode.framework",
 				"${BUILT_PRODUCTS_DIR}/TYSwiftCommon/TYSwiftCommon.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ByebyeUnicode.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TYSwiftCommon.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

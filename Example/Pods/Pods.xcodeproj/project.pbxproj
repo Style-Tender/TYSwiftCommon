@@ -7,31 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06097ADF763AB5F2A47943D92E58F0A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		0D8C840C6BD5D1110AC02941656F797D /* TYSwiftCommon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1AD249DE01B44E5CD716D2E319C25ED /* TYSwiftCommon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17F2313BB6B662A6921A3B2460488CEE /* TYSwiftCommon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A8972EC9831E8883C73451EB37E68B /* TYSwiftCommon-dummy.m */; };
+		013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9907BF95A6AF2CDB8E97D6D65DE7A995 /* HTTPMethod.swift */; };
+		07A6245653DE0DA512B3127643DFAD4F /* TYSwiftCommon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AEB0D5C037367C49A6C9B2A51F071A /* TYSwiftCommon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09B015543EA111EA5485A90DAF991CFB /* Pods-TYSwiftCommon_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3743CACD918C165E076EC761C925491 /* Pods-TYSwiftCommon_Example-dummy.m */; };
+		0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB8E19DC74678C645029336FAAB9EFF /* Combine.swift */; };
+		0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560DB47A2ACDD1C8DC00BABB1504179E /* OperationQueue+Alamofire.swift */; };
+		0FDF0CAAC379BBFA47979177B447395B /* LogCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 389E63C1611311EC717ABDA1E1FA24A4 /* LogCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FFC07B1D85441860EF67779C0FF674D /* TYImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0459A9EA408A6DAF3C3EB4702CEDB75 /* TYImageView.swift */; };
+		1107EE07D735FCEA2142B9B88451DB5D /* TYView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C32E302154D0D487DAF4865F6D15E /* TYView.swift */; };
+		1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A20E23AAFAE718CC9E0FF47BD71E8 /* AFError.swift */; };
+		14C9AA4B7D6A55EAC77E2A566FB5CA69 /* TYNavigationBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291C532E911266439C5F2C39A913DB1 /* TYNavigationBarManager.swift */; };
 		19637CAB90ED23E8E5DFCF344B53C43D /* Pods-TYSwiftCommon_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F48283F3F1B7244B937E2A0F7D21567A /* Pods-TYSwiftCommon_Tests-dummy.m */; };
-		57A82C64F5D54CF632ECFCBAF7A1A19A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		AC4B87112588C2D7001732C0 /* TYStorageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B87102588C2D7001732C0 /* TYStorageUtils.swift */; };
-		AC4B87162588C2FB001732C0 /* TYCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B87152588C2FB001732C0 /* TYCommon.swift */; };
-		AC4B871C2588C33A001732C0 /* TYImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B871B2588C33A001732C0 /* TYImage.swift */; };
-		AC4B87242588C394001732C0 /* TYView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B87232588C394001732C0 /* TYView.swift */; };
-		AC4B87292588C477001732C0 /* TYColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B87282588C477001732C0 /* TYColor.swift */; };
-		AC4B872E2588C48D001732C0 /* TYString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B872D2588C48D001732C0 /* TYString.swift */; };
-		AC4B87332588C4A3001732C0 /* TYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B87322588C4A3001732C0 /* TYButton.swift */; };
-		AC4B87382588C4BD001732C0 /* TYNavigationBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B87372588C4BD001732C0 /* TYNavigationBarManager.swift */; };
-		AC4B873D2588C7BA001732C0 /* TYImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B873C2588C7BA001732C0 /* TYImageView.swift */; };
-		AC4B87422588C7CC001732C0 /* TYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B87412588C7CC001732C0 /* TYLabel.swift */; };
-		AC4B87472588C7E0001732C0 /* TYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B87462588C7E0001732C0 /* TYViewController.swift */; };
-		AC4B874C2588C804001732C0 /* TYAppInfoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B874B2588C804001732C0 /* TYAppInfoUtils.swift */; };
-		AC4B87512588C817001732C0 /* TYHttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B87502588C817001732C0 /* TYHttpHelper.swift */; };
-		B5115403242AF1F5D7603BBA01B2159B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		BA3B5A1BD3C46E25A2C22DB87074F6C1 /* Pods-TYSwiftCommon_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AADD5DBB1649F55422F3E1098C4AB07 /* Pods-TYSwiftCommon_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB531FAF668B74987E651CF759545FE6 /* Pods-TYSwiftCommon_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3743CACD918C165E076EC761C925491 /* Pods-TYSwiftCommon_Example-dummy.m */; };
+		19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C280A8ADCC62957E48F5805D309E0E2E /* NetworkReachabilityManager.swift */; };
+		19DE49E4AC4516ABE5522BFA3EEE2F1E /* TYCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6BA9A104F08A27E9C5FF53DAC62E5 /* TYCommon.swift */; };
+		1CEA33798EC2917CB9B3D5B9F4428D3B /* TYHttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5013284A4A0DA989E36C62F862F46B15 /* TYHttpHelper.swift */; };
+		212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46992A42646ED8B7D247416EFF8DCBD /* StringEncoding+Alamofire.swift */; };
+		218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ECF6CD2131ACCCCF3B0342B29C0F43 /* Protected.swift */; };
+		27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A7875265C28CD1FB7E4AE01932E00 /* DispatchQueue+Alamofire.swift */; };
+		369EE9F64AED77E9764563AAB4034874 /* Pods-TYSwiftCommon_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AADD5DBB1649F55422F3E1098C4AB07 /* Pods-TYSwiftCommon_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267628DFFFADC5A288C537B52AF0EC25 /* SessionDelegate.swift */; };
+		45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB77B00B6477F07395D50B4B46E10E7 /* MultipartFormData.swift */; };
+		47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1372CCEC89CF20D154504A5D36BD79F7 /* ServerTrustEvaluation.swift */; };
+		4AE4E69F935CC537A41CB646E9BF963D /* TYColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC0EC8D4B79AF500861979C0C2583F /* TYColor.swift */; };
+		4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EBAABD00FBA84A2A79A11985B1A2C1 /* ParameterEncoder.swift */; };
+		58D4992E015CE65DD74E8F0B054146E1 /* ByebyeUnicode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501443A9A26DE50FC84A55C017FA1821 /* ByebyeUnicode.framework */; };
+		63C63C18EF176493CA305A3B522F5135 /* TYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4271946A8670D16B171D296FE2AD2089 /* TYLabel.swift */; };
+		6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75BDCF16350D2088F64ED8355DA2181 /* EventMonitor.swift */; };
+		666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5443ADC0013D026D06AF2BD958024F5 /* RedirectHandler.swift */; };
+		66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C95DC83AD2B0B36C0C4EAB90A4D1 /* Result+Alamofire.swift */; };
+		68F86C0A3EF00479EAF53D1CD5149CE7 /* TYString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB617B9C8921E6AF5881C75C2AD26FE /* TYString.swift */; };
+		6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE5D639BE3341E948EADB4344D6CB /* Session.swift */; };
+		6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B4AA92921EEE0C8599F83614344F99 /* RequestTaskMap.swift */; };
+		6DAD0EAE2D558596BDFB51653F9895C0 /* TYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FB0E5B69E03EB40F3243991D72047 /* TYViewController.swift */; };
+		6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085C1FEE8AED0E688B9DC0E535FF78A /* RequestInterceptor.swift */; };
+		72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EDE76CE39FC6213E0C4C9A9BE4D120 /* AlamofireExtended.swift */; };
+		7637562D29350012F96334AB20DE9463 /* TYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED003CD2F81B2B18FFCE5EC0157F7040 /* TYButton.swift */; };
+		7A2FE82CABD05F96FF799E1AFE83746A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B96ACD97A7417E4EE944E192D646423 /* Foundation.framework */; };
+		7B1FAA728AB1EC2734FE58E7EC7222EE /* TYStorageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DA69A095A2E430CEFF473C8EC608BD /* TYStorageUtils.swift */; };
+		7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4075DF99533D4B234FC69DEF17DE4A54 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9DF7DAE981D3C3755238B29B137A7 /* Notifications.swift */; };
+		911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E98CB338774F743D884C96CC18F5FFC /* ResponseSerialization.swift */; };
+		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94BC36290FBC3613D064543652FE55A /* HTTPHeaders.swift */; };
+		9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA5A3926489C462EC6A210D6DF3F2F2 /* URLConvertible+URLRequestConvertible.swift */; };
+		9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F9A48ABBA9C713269563E3FE82CEC1 /* RetryPolicy.swift */; };
+		A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC5135FB7328C9F1B37554FCACE7FA2 /* CFNetwork.framework */; };
+		AABD5EDC1903B7B7A2053AD05C2075E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B96ACD97A7417E4EE944E192D646423 /* Foundation.framework */; };
+		AB8BAD24EB524C6842EADA28C87EDA85 /* TYSwiftCommon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF6150ECE30E6BE576888F90EF364B4 /* TYSwiftCommon-dummy.m */; };
+		ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C90B7BD9A4C385FE623395F0E9B6E /* CachedResponseHandler.swift */; };
+		AC00FD3F8B8DD4474D3C29DD44B83540 /* TYImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF07B1F4F97A7F3AE3871590C7E0EAC /* TYImage.swift */; };
+		AC65B333DC9A94178632DA67876B4BAC /* ByebyeUnicode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB322D0CBD9DAE4D3E5C5C5FD50A477 /* ByebyeUnicode-dummy.m */; };
+		B5115403242AF1F5D7603BBA01B2159B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B96ACD97A7417E4EE944E192D646423 /* Foundation.framework */; };
+		C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242F07429095565FEB18FAD758C5F73 /* Response.swift */; };
+		C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9A1EE06F0760A901CEF0E38BAB4090 /* Alamofire.swift */; };
+		C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 118D8FFAAE617C31DC983C601A73A54F /* Alamofire-dummy.m */; };
+		CE2A06D9C560DE26A66A4F55EB1F085B /* LogCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD296AA56BC693726E29D460823014E /* LogCategory.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6D7387825B18C7E32CF9C16DB79232 /* MultipartUpload.swift */; };
+		D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D97EF271601AF54C9D1AC2B800CF2 /* ParameterEncoding.swift */; };
+		D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3AA5B538210B4A91605D0AB16668C /* URLEncodedFormEncoder.swift */; };
+		D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F70B1FD1C2920D9E724854AE237BF /* URLRequest+Alamofire.swift */; };
+		DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF590B757EB80F0089E6654095C6B01 /* AuthenticationInterceptor.swift */; };
+		E23C40B7063EA5E9A56CBB81C329F994 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94084772B90127DBE26C581C98FA5438 /* Alamofire.framework */; };
+		E3D76744AB6D5C07A52B94079857D13B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B96ACD97A7417E4EE944E192D646423 /* Foundation.framework */; };
+		EB59C7D716D076B0271F00909D390DD6 /* TYAppInfoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94A466FA46260C6256D4F3878533DE /* TYAppInfoUtils.swift */; };
+		EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48112963AD78917C529DB6C825B56D74 /* Request.swift */; };
+		F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F129A7745EA2F7734BA565191B0183F /* Validation.swift */; };
+		F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B96ACD97A7417E4EE944E192D646423 /* Foundation.framework */; };
+		F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE1690CB80715C7B0F874043151B8AC /* URLSessionConfiguration+Alamofire.swift */; };
 		F7984F6D33EED9A46EED76D17529CEBE /* Pods-TYSwiftCommon_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B7AF66B4D52A3117053A96EB2A51C60 /* Pods-TYSwiftCommon_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7EF4E007E76673A524C4417D8425682 /* ByebyeUnicode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F99AD2FC13C63124B56B56AC155030F0 /* ByebyeUnicode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		047955BB1108E858846A4A3316A357B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D0146F7B46EACA3D51FD67E2552333B;
+			remoteInfo = ByebyeUnicode;
+		};
+		09C4C7B5A357D0F3F78F5368CD62321C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D0146F7B46EACA3D51FD67E2552333B;
+			remoteInfo = ByebyeUnicode;
+		};
+		0A8B73736F82E4059AD16734496D9D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		3950A327F15094A3476C95812971ACC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5F898A30719A4A3BE754B09C3C2A70F;
+			remoteInfo = TYSwiftCommon;
+		};
 		A5402180C65892E65ECDA4204791D041 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -39,77 +113,152 @@
 			remoteGlobalIDString = 267471F62F6BFE369DE24DFC80A97C65;
 			remoteInfo = "Pods-TYSwiftCommon_Example";
 		};
-		D7855A024E772A10DF42930D73D1C6D4 /* PBXContainerItemProxy */ = {
+		E0C318F0535430C7B91B1943CFE8B357 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D5F898A30719A4A3BE754B09C3C2A70F;
-			remoteInfo = TYSwiftCommon;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		016E0A6BB57D5DF2553B450E6513FA25 /* TYSwiftCommon.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TYSwiftCommon.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		068A7B7DA0C9EA7BCFA346FDD64F2A33 /* Pods-TYSwiftCommon_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYSwiftCommon_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		09DD09A6093CD114FA01943406CB1F7D /* Pods-TYSwiftCommon_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYSwiftCommon_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0B7AF66B4D52A3117053A96EB2A51C60 /* Pods-TYSwiftCommon_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TYSwiftCommon_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0BF3AA5B538210B4A91605D0AB16668C /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		0FA5EE2238B609270E1CFF81B6BE1447 /* Pods-TYSwiftCommon_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TYSwiftCommon_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0FD296AA56BC693726E29D460823014E /* LogCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LogCategory.m; path = LogCategory/LogCategory.m; sourceTree = "<group>"; };
+		0FF07B1F4F97A7F3AE3871590C7E0EAC /* TYImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYImage.swift; sourceTree = "<group>"; };
+		118D8FFAAE617C31DC983C601A73A54F /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		11B6BA9A104F08A27E9C5FF53DAC62E5 /* TYCommon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TYCommon.swift; path = TYSwiftCommon/Classes/TYCommon.swift; sourceTree = "<group>"; };
 		12C04FA631C5F54ED4383063C25F125E /* Pods-TYSwiftCommon_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TYSwiftCommon_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1372CCEC89CF20D154504A5D36BD79F7 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		1FC5135FB7328C9F1B37554FCACE7FA2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		1FF590B757EB80F0089E6654095C6B01 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		21AEB0D5C037367C49A6C9B2A51F071A /* TYSwiftCommon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYSwiftCommon-umbrella.h"; sourceTree = "<group>"; };
+		21CD79C517388DFAA124DF67DDF817C7 /* TYSwiftCommon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYSwiftCommon-prefix.pch"; sourceTree = "<group>"; };
+		246FBA68B7769018585089835B466D30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		267628DFFFADC5A288C537B52AF0EC25 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		33341751FADAA729315C1E6670E4F882 /* Pods-TYSwiftCommon_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TYSwiftCommon_Tests-Info.plist"; sourceTree = "<group>"; };
-		5B4D3AE36EAAA7CD2172B583FD10B7D3 /* TYSwiftCommon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TYSwiftCommon.modulemap; sourceTree = "<group>"; };
-		60B149BBBC3FB611484C59B358564AFD /* Pods_TYSwiftCommon_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYSwiftCommon_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		389E63C1611311EC717ABDA1E1FA24A4 /* LogCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LogCategory.h; path = LogCategory/LogCategory.h; sourceTree = "<group>"; };
+		3C5F70B1FD1C2920D9E724854AE237BF /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		3E98CB338774F743D884C96CC18F5FFC /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		3F7D32198A5EB963D64D608A2922F60D /* ByebyeUnicode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ByebyeUnicode.release.xcconfig; sourceTree = "<group>"; };
+		4075DF99533D4B234FC69DEF17DE4A54 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		41F9DF7DAE981D3C3755238B29B137A7 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		4271946A8670D16B171D296FE2AD2089 /* TYLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYLabel.swift; sourceTree = "<group>"; };
+		465C32E302154D0D487DAF4865F6D15E /* TYView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYView.swift; sourceTree = "<group>"; };
+		47EBAABD00FBA84A2A79A11985B1A2C1 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		48112963AD78917C529DB6C825B56D74 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		4A6C90B7BD9A4C385FE623395F0E9B6E /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		4B96ACD97A7417E4EE944E192D646423 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4BA083286C3739025D1588AB857F1907 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		4BB77B00B6477F07395D50B4B46E10E7 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		4F94A466FA46260C6256D4F3878533DE /* TYAppInfoUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYAppInfoUtils.swift; sourceTree = "<group>"; };
+		5013284A4A0DA989E36C62F862F46B15 /* TYHttpHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYHttpHelper.swift; sourceTree = "<group>"; };
+		501443A9A26DE50FC84A55C017FA1821 /* ByebyeUnicode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ByebyeUnicode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55DAA266318F088E72715D9771AA3F78 /* TYSwiftCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYSwiftCommon.debug.xcconfig; sourceTree = "<group>"; };
+		560DB47A2ACDD1C8DC00BABB1504179E /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F129A7745EA2F7734BA565191B0183F /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		5F5A20E23AAFAE718CC9E0FF47BD71E8 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		60B149BBBC3FB611484C59B358564AFD /* Pods_TYSwiftCommon_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TYSwiftCommon_Example.framework; path = "Pods-TYSwiftCommon_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		630CB4475A9E69F0BC4400AF125CC1B0 /* Pods-TYSwiftCommon_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TYSwiftCommon_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6D2A06F2B1D80B41A8EF0D1D6CA86BE5 /* TYSwiftCommon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYSwiftCommon-prefix.pch"; sourceTree = "<group>"; };
-		6E6FFAA93A7EE509B3773EC3311C2FFF /* Pods_TYSwiftCommon_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYSwiftCommon_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6FFAA93A7EE509B3773EC3311C2FFF /* Pods_TYSwiftCommon_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TYSwiftCommon_Tests.framework; path = "Pods-TYSwiftCommon_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC695808C076183FABCFCDA7C115B23 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		743B7D5E90D98C2F66C9A538D773860D /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		758D2A0A1F809C31BACD84462BC31876 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		795D97EF271601AF54C9D1AC2B800CF2 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		7AADD5DBB1649F55422F3E1098C4AB07 /* Pods-TYSwiftCommon_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TYSwiftCommon_Example-umbrella.h"; sourceTree = "<group>"; };
+		8242F07429095565FEB18FAD758C5F73 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		83F9457C6BA882355D490004482AF37A /* TYSwiftCommon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TYSwiftCommon.modulemap; sourceTree = "<group>"; };
+		89ECF6CD2131ACCCCF3B0342B29C0F43 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		8CB322D0CBD9DAE4D3E5C5C5FD50A477 /* ByebyeUnicode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ByebyeUnicode-dummy.m"; sourceTree = "<group>"; };
 		931CCFD33E9197DEAC9812218D20C30C /* Pods-TYSwiftCommon_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TYSwiftCommon_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		94084772B90127DBE26C581C98FA5438 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BC111998340CB8D9A46D92656BED04 /* Pods-TYSwiftCommon_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TYSwiftCommon_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3A8972EC9831E8883C73451EB37E68B /* TYSwiftCommon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TYSwiftCommon-dummy.m"; sourceTree = "<group>"; };
-		A8193223FD2AFED3B204775298FC533A /* TYSwiftCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TYSwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9907BF95A6AF2CDB8E97D6D65DE7A995 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		9BA5A3926489C462EC6A210D6DF3F2F2 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3BC9FF5FC49254C220B81E3D6B7ACB4 /* ByebyeUnicode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ByebyeUnicode.framework; path = ByebyeUnicode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DC0EC8D4B79AF500861979C0C2583F /* TYColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYColor.swift; sourceTree = "<group>"; };
+		A5EDE76CE39FC6213E0C4C9A9BE4D120 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		A8193223FD2AFED3B204775298FC533A /* TYSwiftCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TYSwiftCommon.framework; path = TYSwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A86BB12E9B2DA0B2FAECE02282E9069C /* ByebyeUnicode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ByebyeUnicode.modulemap; sourceTree = "<group>"; };
 		A8981CE18C72F7829A215FDEBD6AE56B /* Pods-TYSwiftCommon_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TYSwiftCommon_Tests.modulemap"; sourceTree = "<group>"; };
 		A8FE8F3101C9778B8E4A9873DF471182 /* Pods-TYSwiftCommon_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYSwiftCommon_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AC4B87102588C2D7001732C0 /* TYStorageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYStorageUtils.swift; sourceTree = "<group>"; };
-		AC4B87152588C2FB001732C0 /* TYCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TYCommon.swift; path = TYSwiftCommon/Classes/TYCommon.swift; sourceTree = "<group>"; };
-		AC4B871B2588C33A001732C0 /* TYImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYImage.swift; sourceTree = "<group>"; };
-		AC4B87232588C394001732C0 /* TYView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYView.swift; sourceTree = "<group>"; };
-		AC4B87282588C477001732C0 /* TYColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYColor.swift; sourceTree = "<group>"; };
-		AC4B872D2588C48D001732C0 /* TYString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYString.swift; sourceTree = "<group>"; };
-		AC4B87322588C4A3001732C0 /* TYButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYButton.swift; sourceTree = "<group>"; };
-		AC4B87372588C4BD001732C0 /* TYNavigationBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYNavigationBarManager.swift; sourceTree = "<group>"; };
-		AC4B873C2588C7BA001732C0 /* TYImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYImageView.swift; sourceTree = "<group>"; };
-		AC4B87412588C7CC001732C0 /* TYLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYLabel.swift; sourceTree = "<group>"; };
-		AC4B87462588C7E0001732C0 /* TYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYViewController.swift; sourceTree = "<group>"; };
-		AC4B874B2588C804001732C0 /* TYAppInfoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYAppInfoUtils.swift; sourceTree = "<group>"; };
-		AC4B87502588C817001732C0 /* TYHttpHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYHttpHelper.swift; sourceTree = "<group>"; };
+		AB01D6037649704A8E9C11BBAAB4FD8D /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		AB3AD9F426E901F0F3E669C99F4545B7 /* ByebyeUnicode-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ByebyeUnicode-Info.plist"; sourceTree = "<group>"; };
+		AD961F082792CB868909A4278993C4ED /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		ADB8E19DC74678C645029336FAAB9EFF /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		AE3C1EAC492B80D193BCBC252DDA199B /* TYSwiftCommon.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TYSwiftCommon.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AEF6150ECE30E6BE576888F90EF364B4 /* TYSwiftCommon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TYSwiftCommon-dummy.m"; sourceTree = "<group>"; };
+		B0459A9EA408A6DAF3C3EB4702CEDB75 /* TYImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYImageView.swift; sourceTree = "<group>"; };
 		B05F31F6AE8884A45FFCB1857E26C650 /* Pods-TYSwiftCommon_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TYSwiftCommon_Example-Info.plist"; sourceTree = "<group>"; };
-		B5C3AC3D51A46BEDFA1594509B84E390 /* TYSwiftCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYSwiftCommon.release.xcconfig; sourceTree = "<group>"; };
+		B75BDCF16350D2088F64ED8355DA2181 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		B9B4AA92921EEE0C8599F83614344F99 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		BE17C95DC83AD2B0B36C0C4EAB90A4D1 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		BE6D7387825B18C7E32CF9C16DB79232 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		BFF1CBB1E6012A51A046F4C2C9AD6109 /* ByebyeUnicode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ByebyeUnicode.debug.xcconfig; sourceTree = "<group>"; };
+		C280A8ADCC62957E48F5805D309E0E2E /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		C3743CACD918C165E076EC761C925491 /* Pods-TYSwiftCommon_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TYSwiftCommon_Example-dummy.m"; sourceTree = "<group>"; };
-		CA940BDA66FF9DF96BE4909B4774BEBB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D1AD249DE01B44E5CD716D2E319C25ED /* TYSwiftCommon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYSwiftCommon-umbrella.h"; sourceTree = "<group>"; };
-		D6F89B7A49D1DCD8FB4CA771CC4A0973 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C46992A42646ED8B7D247416EFF8DCBD /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		C6F9A48ABBA9C713269563E3FE82CEC1 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		D4DA69A095A2E430CEFF473C8EC608BD /* TYStorageUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYStorageUtils.swift; sourceTree = "<group>"; };
+		D5801FB13B84CBBC042C5B77C4719059 /* TYSwiftCommon-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TYSwiftCommon-Info.plist"; sourceTree = "<group>"; };
+		D94BC36290FBC3613D064543652FE55A /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		E2A5427F146BB5185F4A6165B3C75E19 /* Pods-TYSwiftCommon_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TYSwiftCommon_Example.modulemap"; sourceTree = "<group>"; };
-		E2D9D2FE027D9D52020E394F2A1C63CA /* TYSwiftCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYSwiftCommon.debug.xcconfig; sourceTree = "<group>"; };
+		E4CCE5D639BE3341E948EADB4344D6CB /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		E5443ADC0013D026D06AF2BD958024F5 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		E75ECC0039B2AA40261B2478429DDF66 /* ByebyeUnicode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ByebyeUnicode-prefix.pch"; sourceTree = "<group>"; };
 		E7CC0A271AC1EB4B7CCB13A994F48D6B /* Pods-TYSwiftCommon_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYSwiftCommon_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F1CE1C7B52BFDA100A0ECE19927925FF /* TYSwiftCommon-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TYSwiftCommon-Info.plist"; sourceTree = "<group>"; };
+		ED003CD2F81B2B18FFCE5EC0157F7040 /* TYButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYButton.swift; sourceTree = "<group>"; };
+		EDB617B9C8921E6AF5881C75C2AD26FE /* TYString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYString.swift; sourceTree = "<group>"; };
+		EF9A1EE06F0760A901CEF0E38BAB4090 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		EFE1690CB80715C7B0F874043151B8AC /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		F085C1FEE8AED0E688B9DC0E535FF78A /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		F291C532E911266439C5F2C39A913DB1 /* TYNavigationBarManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYNavigationBarManager.swift; sourceTree = "<group>"; };
+		F34A7875265C28CD1FB7E4AE01932E00 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		F3716FE521781E4A723481A22752C3A9 /* TYSwiftCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYSwiftCommon.release.xcconfig; sourceTree = "<group>"; };
 		F48283F3F1B7244B937E2A0F7D21567A /* Pods-TYSwiftCommon_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TYSwiftCommon_Tests-dummy.m"; sourceTree = "<group>"; };
+		F98FB0E5B69E03EB40F3243991D72047 /* TYViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TYViewController.swift; sourceTree = "<group>"; };
+		F99AD2FC13C63124B56B56AC155030F0 /* ByebyeUnicode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ByebyeUnicode-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		518942EDB3AF4E64203AB6D26DD82E9F /* Frameworks */ = {
+		4127B42771837AB5ACCA752A5B2E421D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57A82C64F5D54CF632ECFCBAF7A1A19A /* Foundation.framework in Frameworks */,
+				7A2FE82CABD05F96FF799E1AFE83746A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0DFD1AA45846F80519923F95D453468 /* Frameworks */ = {
+		5E968184B848A32DF53FE8C7413122B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06097ADF763AB5F2A47943D92E58F0A4 /* Foundation.framework in Frameworks */,
+				AABD5EDC1903B7B7A2053AD05C2075E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9590D3FE7A79CD7CBEE3F346E8C19D4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */,
+				F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5AC994624BD79D735A6C6C9ED52147F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23C40B7063EA5E9A56CBB81C329F994 /* Alamofire.framework in Frameworks */,
+				58D4992E015CE65DD74E8F0B054146E1 /* ByebyeUnicode.framework in Frameworks */,
+				E3D76744AB6D5C07A52B94079857D13B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,35 +273,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05B5DFFC927DFAF1C5D0B28DCC6EE6CA /* Development Pods */ = {
+		05B25DD60EF673414CF9298B04B5A0FE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2F886B5523B200C21AE060CF7658181A /* TYSwiftCommon */,
+				54FE922BC560BB24A0974C389FF5E92C /* TYSwiftCommon */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		20D6C7625AD19EE68C4FAF2C553E28F6 /* Pod */ = {
+		19AE879434FC59209A09DEA6A30B2197 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D6F89B7A49D1DCD8FB4CA771CC4A0973 /* LICENSE */,
-				CA940BDA66FF9DF96BE4909B4774BEBB /* README.md */,
-				016E0A6BB57D5DF2553B450E6513FA25 /* TYSwiftCommon.podspec */,
+				1FC5135FB7328C9F1B37554FCACE7FA2 /* CFNetwork.framework */,
+				4B96ACD97A7417E4EE944E192D646423 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		20A0B3EE91E4D6C7E02C0B565312CE6E /* ByebyeUnicode */ = {
+			isa = PBXGroup;
+			children = (
+				389E63C1611311EC717ABDA1E1FA24A4 /* LogCategory.h */,
+				0FD296AA56BC693726E29D460823014E /* LogCategory.m */,
+				56CFD56C60C4D777E32DB80CC6453C8F /* Support Files */,
+			);
+			name = ByebyeUnicode;
+			path = ByebyeUnicode;
+			sourceTree = "<group>";
+		};
+		22AC0EEA396F20211935EB038ED8848E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94084772B90127DBE26C581C98FA5438 /* Alamofire.framework */,
+				501443A9A26DE50FC84A55C017FA1821 /* ByebyeUnicode.framework */,
+				19AE879434FC59209A09DEA6A30B2197 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DA98A72DD5A20CAB9C9ABC6BF65F0CE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4BA083286C3739025D1588AB857F1907 /* LICENSE */,
+				246FBA68B7769018585089835B466D30 /* README.md */,
+				AE3C1EAC492B80D193BCBC252DDA199B /* TYSwiftCommon.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		2F886B5523B200C21AE060CF7658181A /* TYSwiftCommon */ = {
+		3B9F4E86D91938E4B06F932954B44CD0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AC4B87152588C2FB001732C0 /* TYCommon.swift */,
-				AC4B871A2588C327001732C0 /* Category */,
-				AC4B870F2588C2C0001732C0 /* Utils */,
-				20D6C7625AD19EE68C4FAF2C553E28F6 /* Pod */,
-				B37E0BEE0A4201F240825A8B49063E08 /* Support Files */,
+				83F9457C6BA882355D490004482AF37A /* TYSwiftCommon.modulemap */,
+				AEF6150ECE30E6BE576888F90EF364B4 /* TYSwiftCommon-dummy.m */,
+				D5801FB13B84CBBC042C5B77C4719059 /* TYSwiftCommon-Info.plist */,
+				21CD79C517388DFAA124DF67DDF817C7 /* TYSwiftCommon-prefix.pch */,
+				21AEB0D5C037367C49A6C9B2A51F071A /* TYSwiftCommon-umbrella.h */,
+				55DAA266318F088E72715D9771AA3F78 /* TYSwiftCommon.debug.xcconfig */,
+				F3716FE521781E4A723481A22752C3A9 /* TYSwiftCommon.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TYSwiftCommon";
+			sourceTree = "<group>";
+		};
+		4345638C5491955C2EA9D09C2FCFBCE2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				ED003CD2F81B2B18FFCE5EC0157F7040 /* TYButton.swift */,
+				A5DC0EC8D4B79AF500861979C0C2583F /* TYColor.swift */,
+				0FF07B1F4F97A7F3AE3871590C7E0EAC /* TYImage.swift */,
+				B0459A9EA408A6DAF3C3EB4702CEDB75 /* TYImageView.swift */,
+				4271946A8670D16B171D296FE2AD2089 /* TYLabel.swift */,
+				EDB617B9C8921E6AF5881C75C2AD26FE /* TYString.swift */,
+				465C32E302154D0D487DAF4865F6D15E /* TYView.swift */,
+				F98FB0E5B69E03EB40F3243991D72047 /* TYViewController.swift */,
+			);
+			name = Category;
+			path = TYSwiftCommon/Classes/Category;
+			sourceTree = "<group>";
+		};
+		54FE922BC560BB24A0974C389FF5E92C /* TYSwiftCommon */ = {
+			isa = PBXGroup;
+			children = (
+				11B6BA9A104F08A27E9C5FF53DAC62E5 /* TYCommon.swift */,
+				4345638C5491955C2EA9D09C2FCFBCE2 /* Category */,
+				2DA98A72DD5A20CAB9C9ABC6BF65F0CE /* Pod */,
+				3B9F4E86D91938E4B06F932954B44CD0 /* Support Files */,
+				8A7E50747BCCDE536AEC86EC6B3ADE30 /* Utils */,
 			);
 			name = TYSwiftCommon;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		56CFD56C60C4D777E32DB80CC6453C8F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A86BB12E9B2DA0B2FAECE02282E9069C /* ByebyeUnicode.modulemap */,
+				8CB322D0CBD9DAE4D3E5C5C5FD50A477 /* ByebyeUnicode-dummy.m */,
+				AB3AD9F426E901F0F3E669C99F4545B7 /* ByebyeUnicode-Info.plist */,
+				E75ECC0039B2AA40261B2478429DDF66 /* ByebyeUnicode-prefix.pch */,
+				F99AD2FC13C63124B56B56AC155030F0 /* ByebyeUnicode-umbrella.h */,
+				BFF1CBB1E6012A51A046F4C2C9AD6109 /* ByebyeUnicode.debug.xcconfig */,
+				3F7D32198A5EB963D64D608A2922F60D /* ByebyeUnicode.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ByebyeUnicode";
 			sourceTree = "<group>";
 		};
 		6705DC30A0FBA213451CC3A2A1CA6DC5 /* Pods-TYSwiftCommon_Tests */ = {
@@ -171,14 +396,69 @@
 			path = "Target Support Files/Pods-TYSwiftCommon_Tests";
 			sourceTree = "<group>";
 		};
-		6B417CBCC2B51481F531344765E59A4B /* Products */ = {
+		696DD43BFCF8AEF27873FB0FFE8E70E7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				60B149BBBC3FB611484C59B358564AFD /* Pods_TYSwiftCommon_Example.framework */,
-				6E6FFAA93A7EE509B3773EC3311C2FFF /* Pods_TYSwiftCommon_Tests.framework */,
-				A8193223FD2AFED3B204775298FC533A /* TYSwiftCommon.framework */,
+				6A6F2525D619F9C0C7E65D79678B17A2 /* Alamofire */,
+				20A0B3EE91E4D6C7E02C0B565312CE6E /* ByebyeUnicode */,
 			);
-			name = Products;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A6F2525D619F9C0C7E65D79678B17A2 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A20E23AAFAE718CC9E0FF47BD71E8 /* AFError.swift */,
+				EF9A1EE06F0760A901CEF0E38BAB4090 /* Alamofire.swift */,
+				A5EDE76CE39FC6213E0C4C9A9BE4D120 /* AlamofireExtended.swift */,
+				1FF590B757EB80F0089E6654095C6B01 /* AuthenticationInterceptor.swift */,
+				4A6C90B7BD9A4C385FE623395F0E9B6E /* CachedResponseHandler.swift */,
+				ADB8E19DC74678C645029336FAAB9EFF /* Combine.swift */,
+				F34A7875265C28CD1FB7E4AE01932E00 /* DispatchQueue+Alamofire.swift */,
+				B75BDCF16350D2088F64ED8355DA2181 /* EventMonitor.swift */,
+				D94BC36290FBC3613D064543652FE55A /* HTTPHeaders.swift */,
+				9907BF95A6AF2CDB8E97D6D65DE7A995 /* HTTPMethod.swift */,
+				4BB77B00B6477F07395D50B4B46E10E7 /* MultipartFormData.swift */,
+				BE6D7387825B18C7E32CF9C16DB79232 /* MultipartUpload.swift */,
+				C280A8ADCC62957E48F5805D309E0E2E /* NetworkReachabilityManager.swift */,
+				41F9DF7DAE981D3C3755238B29B137A7 /* Notifications.swift */,
+				560DB47A2ACDD1C8DC00BABB1504179E /* OperationQueue+Alamofire.swift */,
+				47EBAABD00FBA84A2A79A11985B1A2C1 /* ParameterEncoder.swift */,
+				795D97EF271601AF54C9D1AC2B800CF2 /* ParameterEncoding.swift */,
+				89ECF6CD2131ACCCCF3B0342B29C0F43 /* Protected.swift */,
+				E5443ADC0013D026D06AF2BD958024F5 /* RedirectHandler.swift */,
+				48112963AD78917C529DB6C825B56D74 /* Request.swift */,
+				F085C1FEE8AED0E688B9DC0E535FF78A /* RequestInterceptor.swift */,
+				B9B4AA92921EEE0C8599F83614344F99 /* RequestTaskMap.swift */,
+				8242F07429095565FEB18FAD758C5F73 /* Response.swift */,
+				3E98CB338774F743D884C96CC18F5FFC /* ResponseSerialization.swift */,
+				BE17C95DC83AD2B0B36C0C4EAB90A4D1 /* Result+Alamofire.swift */,
+				C6F9A48ABBA9C713269563E3FE82CEC1 /* RetryPolicy.swift */,
+				1372CCEC89CF20D154504A5D36BD79F7 /* ServerTrustEvaluation.swift */,
+				E4CCE5D639BE3341E948EADB4344D6CB /* Session.swift */,
+				267628DFFFADC5A288C537B52AF0EC25 /* SessionDelegate.swift */,
+				C46992A42646ED8B7D247416EFF8DCBD /* StringEncoding+Alamofire.swift */,
+				9BA5A3926489C462EC6A210D6DF3F2F2 /* URLConvertible+URLRequestConvertible.swift */,
+				0BF3AA5B538210B4A91605D0AB16668C /* URLEncodedFormEncoder.swift */,
+				3C5F70B1FD1C2920D9E724854AE237BF /* URLRequest+Alamofire.swift */,
+				EFE1690CB80715C7B0F874043151B8AC /* URLSessionConfiguration+Alamofire.swift */,
+				5F129A7745EA2F7734BA565191B0183F /* Validation.swift */,
+				DE578DAA1E4FF792B281FEA7BA5CD04D /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		8A7E50747BCCDE536AEC86EC6B3ADE30 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4F94A466FA46260C6256D4F3878533DE /* TYAppInfoUtils.swift */,
+				5013284A4A0DA989E36C62F862F46B15 /* TYHttpHelper.swift */,
+				F291C532E911266439C5F2C39A913DB1 /* TYNavigationBarManager.swift */,
+				D4DA69A095A2E430CEFF473C8EC608BD /* TYStorageUtils.swift */,
+			);
+			name = Utils;
+			path = TYSwiftCommon/Classes/Utils;
 			sourceTree = "<group>";
 		};
 		907AA60946FA2EE6CAA89DF1311B627C /* Pods-TYSwiftCommon_Example */ = {
@@ -207,74 +487,43 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		AC4B870F2588C2C0001732C0 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				AC4B87102588C2D7001732C0 /* TYStorageUtils.swift */,
-				AC4B87372588C4BD001732C0 /* TYNavigationBarManager.swift */,
-				AC4B874B2588C804001732C0 /* TYAppInfoUtils.swift */,
-				AC4B87502588C817001732C0 /* TYHttpHelper.swift */,
-			);
-			name = Utils;
-			path = TYSwiftCommon/Classes/Utils;
-			sourceTree = "<group>";
-		};
-		AC4B871A2588C327001732C0 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				AC4B871B2588C33A001732C0 /* TYImage.swift */,
-				AC4B87232588C394001732C0 /* TYView.swift */,
-				AC4B87282588C477001732C0 /* TYColor.swift */,
-				AC4B872D2588C48D001732C0 /* TYString.swift */,
-				AC4B87322588C4A3001732C0 /* TYButton.swift */,
-				AC4B873C2588C7BA001732C0 /* TYImageView.swift */,
-				AC4B87412588C7CC001732C0 /* TYLabel.swift */,
-				AC4B87462588C7E0001732C0 /* TYViewController.swift */,
-			);
-			name = Category;
-			path = TYSwiftCommon/Classes/Category;
-			sourceTree = "<group>";
-		};
-		B37E0BEE0A4201F240825A8B49063E08 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5B4D3AE36EAAA7CD2172B583FD10B7D3 /* TYSwiftCommon.modulemap */,
-				A3A8972EC9831E8883C73451EB37E68B /* TYSwiftCommon-dummy.m */,
-				F1CE1C7B52BFDA100A0ECE19927925FF /* TYSwiftCommon-Info.plist */,
-				6D2A06F2B1D80B41A8EF0D1D6CA86BE5 /* TYSwiftCommon-prefix.pch */,
-				D1AD249DE01B44E5CD716D2E319C25ED /* TYSwiftCommon-umbrella.h */,
-				E2D9D2FE027D9D52020E394F2A1C63CA /* TYSwiftCommon.debug.xcconfig */,
-				B5C3AC3D51A46BEDFA1594509B84E390 /* TYSwiftCommon.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TYSwiftCommon";
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				05B5DFFC927DFAF1C5D0B28DCC6EE6CA /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				6B417CBCC2B51481F531344765E59A4B /* Products */,
+				05B25DD60EF673414CF9298B04B5A0FE /* Development Pods */,
+				22AC0EEA396F20211935EB038ED8848E /* Frameworks */,
+				696DD43BFCF8AEF27873FB0FFE8E70E7 /* Pods */,
+				FE34BF56531DCF05E17201B29FAB4268 /* Products */,
 				9AF7F09E72B32246A63247AB5366D63C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		DE578DAA1E4FF792B281FEA7BA5CD04D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				743B7D5E90D98C2F66C9A538D773860D /* Alamofire.modulemap */,
+				118D8FFAAE617C31DC983C601A73A54F /* Alamofire-dummy.m */,
+				758D2A0A1F809C31BACD84462BC31876 /* Alamofire-Info.plist */,
+				6EC695808C076183FABCFCDA7C115B23 /* Alamofire-prefix.pch */,
+				4075DF99533D4B234FC69DEF17DE4A54 /* Alamofire-umbrella.h */,
+				AB01D6037649704A8E9C11BBAAB4FD8D /* Alamofire.debug.xcconfig */,
+				AD961F082792CB868909A4278993C4ED /* Alamofire.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		FE34BF56531DCF05E17201B29FAB4268 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				A3BC9FF5FC49254C220B81E3D6B7ACB4 /* ByebyeUnicode.framework */,
+				60B149BBBC3FB611484C59B358564AFD /* Pods_TYSwiftCommon_Example.framework */,
+				6E6FFAA93A7EE509B3773EC3311C2FFF /* Pods_TYSwiftCommon_Tests.framework */,
+				A8193223FD2AFED3B204775298FC533A /* TYSwiftCommon.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,19 +537,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		394487794418FE2FDB654CA16CE15DB1 /* Headers */ = {
+		570BEFAEC3215D7A90DDA7CF109AED1D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D8C840C6BD5D1110AC02941656F797D /* TYSwiftCommon-umbrella.h in Headers */,
+				07A6245653DE0DA512B3127643DFAD4F /* TYSwiftCommon-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D987EFF01521BC5F3C6910472784388 /* Headers */ = {
+		8070B01910C64B9AFD0DB550EDE38D6B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3B5A1BD3C46E25A2C22DB87074F6C1 /* Pods-TYSwiftCommon_Example-umbrella.h in Headers */,
+				7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE4D53480CD5345C6B85F0E41900D057 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369EE9F64AED77E9764563AAB4034874 /* Pods-TYSwiftCommon_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDEB47A6A7D82AF01AF043BC3276E388 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7EF4E007E76673A524C4417D8425682 /* ByebyeUnicode-umbrella.h in Headers */,
+				0FDF0CAAC379BBFA47979177B447395B /* LogCategory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,35 +575,57 @@
 /* Begin PBXNativeTarget section */
 		267471F62F6BFE369DE24DFC80A97C65 /* Pods-TYSwiftCommon_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A73E19CD6D9CF84A17909B4CB8C22938 /* Build configuration list for PBXNativeTarget "Pods-TYSwiftCommon_Example" */;
+			buildConfigurationList = FB58322B551AAF75C4C31DF7D7C30DC0 /* Build configuration list for PBXNativeTarget "Pods-TYSwiftCommon_Example" */;
 			buildPhases = (
-				7D987EFF01521BC5F3C6910472784388 /* Headers */,
-				2A15E5FFEF7D8FC46DF5A194C8B78B30 /* Sources */,
-				E0DFD1AA45846F80519923F95D453468 /* Frameworks */,
-				FE7CD613E983E4FE22E0BA7A46091D5D /* Resources */,
+				DE4D53480CD5345C6B85F0E41900D057 /* Headers */,
+				8C2E3DC3E606A60AAB9A8AF32C034C77 /* Sources */,
+				4127B42771837AB5ACCA752A5B2E421D /* Frameworks */,
+				D6CF1E19ACD14F59B13C541DBB009F37 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A7ABB7869F2733F921D40E361609DCDE /* PBXTargetDependency */,
+				1790C4CFECE71114F11D3B22DF8058C4 /* PBXTargetDependency */,
+				8A2CEF1EDD01AAFBC1BECBF6ABCD415F /* PBXTargetDependency */,
+				34F0918BCEBC465D204388E2C6446C81 /* PBXTargetDependency */,
 			);
 			name = "Pods-TYSwiftCommon_Example";
 			productName = "Pods-TYSwiftCommon_Example";
 			productReference = 60B149BBBC3FB611484C59B358564AFD /* Pods_TYSwiftCommon_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D5F898A30719A4A3BE754B09C3C2A70F /* TYSwiftCommon */ = {
+		2D0146F7B46EACA3D51FD67E2552333B /* ByebyeUnicode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B869A4DD96766FAD58B9617D80D75BF2 /* Build configuration list for PBXNativeTarget "TYSwiftCommon" */;
+			buildConfigurationList = 9992C164C093D02BACF3B5C994280BB1 /* Build configuration list for PBXNativeTarget "ByebyeUnicode" */;
 			buildPhases = (
-				394487794418FE2FDB654CA16CE15DB1 /* Headers */,
-				00CBBCABB98BD9FB242229CBF5555CB0 /* Sources */,
-				518942EDB3AF4E64203AB6D26DD82E9F /* Frameworks */,
-				979B38ED95B3E9D760A634888FD622A6 /* Resources */,
+				FDEB47A6A7D82AF01AF043BC3276E388 /* Headers */,
+				1683DD004B6CA50E24DBD3471FA99CE7 /* Sources */,
+				5E968184B848A32DF53FE8C7413122B0 /* Frameworks */,
+				7657BC03D65735C46D1D1A987E9EBFD3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = ByebyeUnicode;
+			productName = ByebyeUnicode;
+			productReference = A3BC9FF5FC49254C220B81E3D6B7ACB4 /* ByebyeUnicode.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5F898A30719A4A3BE754B09C3C2A70F /* TYSwiftCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF0725246F78039931E71FFCAFE9395 /* Build configuration list for PBXNativeTarget "TYSwiftCommon" */;
+			buildPhases = (
+				570BEFAEC3215D7A90DDA7CF109AED1D /* Headers */,
+				20D317DF58D908F26878E35A0DCBA84A /* Sources */,
+				D5AC994624BD79D735A6C6C9ED52147F /* Frameworks */,
+				6EEA93F997FCB300B94F944B209A7E79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39F98EF5E30F838F234892395F220298 /* PBXTargetDependency */,
+				39A52E975DEB00D3EF15D1170E7007DE /* PBXTargetDependency */,
 			);
 			name = TYSwiftCommon;
 			productName = TYSwiftCommon;
@@ -363,6 +651,24 @@
 			productReference = 6E6FFAA93A7EE509B3773EC3311C2FFF /* Pods_TYSwiftCommon_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				8070B01910C64B9AFD0DB550EDE38D6B /* Headers */,
+				2C8326877F6A9617C2FBE9BD15D95B59 /* Sources */,
+				9590D3FE7A79CD7CBEE3F346E8C19D4D /* Frameworks */,
+				9BCA7D105D531AE5DAF34FB86A2E623A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -371,11 +677,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				TargetAttributes = {
-					D5F898A30719A4A3BE754B09C3C2A70F = {
-						LastSwiftMigration = 1220;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -386,10 +687,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6B417CBCC2B51481F531344765E59A4B /* Products */;
+			productRefGroup = FE34BF56531DCF05E17201B29FAB4268 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				2D0146F7B46EACA3D51FD67E2552333B /* ByebyeUnicode */,
 				267471F62F6BFE369DE24DFC80A97C65 /* Pods-TYSwiftCommon_Example */,
 				D81B27FD05BEB29C37725E2754B1B4E5 /* Pods-TYSwiftCommon_Tests */,
 				D5F898A30719A4A3BE754B09C3C2A70F /* TYSwiftCommon */,
@@ -405,14 +708,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		979B38ED95B3E9D760A634888FD622A6 /* Resources */ = {
+		6EEA93F997FCB300B94F944B209A7E79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE7CD613E983E4FE22E0BA7A46091D5D /* Resources */ = {
+		7657BC03D65735C46D1D1A987E9EBFD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCA7D105D531AE5DAF34FB86A2E623A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CF1E19ACD14F59B13C541DBB009F37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -422,32 +739,84 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00CBBCABB98BD9FB242229CBF5555CB0 /* Sources */ = {
+		1683DD004B6CA50E24DBD3471FA99CE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC4B87422588C7CC001732C0 /* TYLabel.swift in Sources */,
-				AC4B87292588C477001732C0 /* TYColor.swift in Sources */,
-				AC4B871C2588C33A001732C0 /* TYImage.swift in Sources */,
-				AC4B87332588C4A3001732C0 /* TYButton.swift in Sources */,
-				AC4B87382588C4BD001732C0 /* TYNavigationBarManager.swift in Sources */,
-				AC4B87472588C7E0001732C0 /* TYViewController.swift in Sources */,
-				AC4B872E2588C48D001732C0 /* TYString.swift in Sources */,
-				AC4B874C2588C804001732C0 /* TYAppInfoUtils.swift in Sources */,
-				AC4B87112588C2D7001732C0 /* TYStorageUtils.swift in Sources */,
-				AC4B87162588C2FB001732C0 /* TYCommon.swift in Sources */,
-				AC4B87242588C394001732C0 /* TYView.swift in Sources */,
-				17F2313BB6B662A6921A3B2460488CEE /* TYSwiftCommon-dummy.m in Sources */,
-				AC4B87512588C817001732C0 /* TYHttpHelper.swift in Sources */,
-				AC4B873D2588C7BA001732C0 /* TYImageView.swift in Sources */,
+				AC65B333DC9A94178632DA67876B4BAC /* ByebyeUnicode-dummy.m in Sources */,
+				CE2A06D9C560DE26A66A4F55EB1F085B /* LogCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A15E5FFEF7D8FC46DF5A194C8B78B30 /* Sources */ = {
+		20D317DF58D908F26878E35A0DCBA84A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB531FAF668B74987E651CF759545FE6 /* Pods-TYSwiftCommon_Example-dummy.m in Sources */,
+				EB59C7D716D076B0271F00909D390DD6 /* TYAppInfoUtils.swift in Sources */,
+				7637562D29350012F96334AB20DE9463 /* TYButton.swift in Sources */,
+				4AE4E69F935CC537A41CB646E9BF963D /* TYColor.swift in Sources */,
+				19DE49E4AC4516ABE5522BFA3EEE2F1E /* TYCommon.swift in Sources */,
+				1CEA33798EC2917CB9B3D5B9F4428D3B /* TYHttpHelper.swift in Sources */,
+				AC00FD3F8B8DD4474D3C29DD44B83540 /* TYImage.swift in Sources */,
+				0FFC07B1D85441860EF67779C0FF674D /* TYImageView.swift in Sources */,
+				63C63C18EF176493CA305A3B522F5135 /* TYLabel.swift in Sources */,
+				14C9AA4B7D6A55EAC77E2A566FB5CA69 /* TYNavigationBarManager.swift in Sources */,
+				7B1FAA728AB1EC2734FE58E7EC7222EE /* TYStorageUtils.swift in Sources */,
+				68F86C0A3EF00479EAF53D1CD5149CE7 /* TYString.swift in Sources */,
+				AB8BAD24EB524C6842EADA28C87EDA85 /* TYSwiftCommon-dummy.m in Sources */,
+				1107EE07D735FCEA2142B9B88451DB5D /* TYView.swift in Sources */,
+				6DAD0EAE2D558596BDFB51653F9895C0 /* TYViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C8326877F6A9617C2FBE9BD15D95B59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */,
+				C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */,
+				C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */,
+				72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */,
+				DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */,
+				ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */,
+				0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */,
+				27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */,
+				6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */,
+				91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */,
+				013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */,
+				45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */,
+				D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */,
+				19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */,
+				8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */,
+				0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */,
+				4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */,
+				D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */,
+				218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */,
+				666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */,
+				EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */,
+				6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */,
+				6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */,
+				C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */,
+				911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */,
+				66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */,
+				9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */,
+				47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */,
+				6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */,
+				381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */,
+				212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */,
+				9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */,
+				D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */,
+				F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C2E3DC3E606A60AAB9A8AF32C034C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B015543EA111EA5485A90DAF991CFB /* Pods-TYSwiftCommon_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,89 +831,46 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1790C4CFECE71114F11D3B22DF8058C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = E0C318F0535430C7B91B1943CFE8B357 /* PBXContainerItemProxy */;
+		};
+		34F0918BCEBC465D204388E2C6446C81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TYSwiftCommon;
+			target = D5F898A30719A4A3BE754B09C3C2A70F /* TYSwiftCommon */;
+			targetProxy = 3950A327F15094A3476C95812971ACC2 /* PBXContainerItemProxy */;
+		};
+		39A52E975DEB00D3EF15D1170E7007DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ByebyeUnicode;
+			target = 2D0146F7B46EACA3D51FD67E2552333B /* ByebyeUnicode */;
+			targetProxy = 047955BB1108E858846A4A3316A357B4 /* PBXContainerItemProxy */;
+		};
+		39F98EF5E30F838F234892395F220298 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 0A8B73736F82E4059AD16734496D9D29 /* PBXContainerItemProxy */;
+		};
 		66585C292C2956C4772F61EE7BED7489 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TYSwiftCommon_Example";
 			target = 267471F62F6BFE369DE24DFC80A97C65 /* Pods-TYSwiftCommon_Example */;
 			targetProxy = A5402180C65892E65ECDA4204791D041 /* PBXContainerItemProxy */;
 		};
-		A7ABB7869F2733F921D40E361609DCDE /* PBXTargetDependency */ = {
+		8A2CEF1EDD01AAFBC1BECBF6ABCD415F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TYSwiftCommon;
-			target = D5F898A30719A4A3BE754B09C3C2A70F /* TYSwiftCommon */;
-			targetProxy = D7855A024E772A10DF42930D73D1C6D4 /* PBXContainerItemProxy */;
+			name = ByebyeUnicode;
+			target = 2D0146F7B46EACA3D51FD67E2552333B /* ByebyeUnicode */;
+			targetProxy = 09C4C7B5A357D0F3F78F5368CD62321C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03DA6AF6CF4CF0EE5F103D09E5990D36 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8FE8F3101C9778B8E4A9873DF471182 /* Pods-TYSwiftCommon_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TYSwiftCommon_Example/Pods-TYSwiftCommon_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TYSwiftCommon_Example/Pods-TYSwiftCommon_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7054E74C05B0A2102A4AF2CFF5EEED6C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7CC0A271AC1EB4B7CCB13A994F48D6B /* Pods-TYSwiftCommon_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TYSwiftCommon_Tests/Pods-TYSwiftCommon_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TYSwiftCommon_Tests/Pods-TYSwiftCommon_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+		257497152829C177993B5EC99C1D227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -592,18 +918,261 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+		3CE5855C221649C126137ADA19B0C026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 068A7B7DA0C9EA7BCFA346FDD64F2A33 /* Pods-TYSwiftCommon_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TYSwiftCommon_Tests/Pods-TYSwiftCommon_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TYSwiftCommon_Tests/Pods-TYSwiftCommon_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A9D470458CBC2696633103BC3AF755E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB01D6037649704A8E9C11BBAAB4FD8D /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6046E23EAB265F83D15593A47652680A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8FE8F3101C9778B8E4A9873DF471182 /* Pods-TYSwiftCommon_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TYSwiftCommon_Example/Pods-TYSwiftCommon_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TYSwiftCommon_Example/Pods-TYSwiftCommon_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76331D199CD2C24D0B766233AF40BE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7CC0A271AC1EB4B7CCB13A994F48D6B /* Pods-TYSwiftCommon_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TYSwiftCommon_Tests/Pods-TYSwiftCommon_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TYSwiftCommon_Tests/Pods-TYSwiftCommon_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC33EEC2A9AF2CB0F42FA8E28538D46C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55DAA266318F088E72715D9771AA3F78 /* TYSwiftCommon.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TYSwiftCommon/TYSwiftCommon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TYSwiftCommon/TYSwiftCommon-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TYSwiftCommon/TYSwiftCommon.modulemap";
+				PRODUCT_MODULE_NAME = TYSwiftCommon;
+				PRODUCT_NAME = TYSwiftCommon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D597913500A568477F588048139E9FE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD961F082792CB868909A4278993C4ED /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DA8FA2411F5060BD209FEC06E7152BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09DD09A6093CD114FA01943406CB1F7D /* Pods-TYSwiftCommon_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TYSwiftCommon_Example/Pods-TYSwiftCommon_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TYSwiftCommon_Example/Pods-TYSwiftCommon_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -654,7 +1223,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -667,11 +1236,12 @@
 			};
 			name = Debug;
 		};
-		9B6C5BA5B6962887F45D8A7E376A534C /* Release */ = {
+		E285CE029973CF4B0E1D61A0DCAFC6DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5C3AC3D51A46BEDFA1594509B84E390 /* TYSwiftCommon.release.xcconfig */;
+			baseConfigurationReference = F3716FE521781E4A723481A22752C3A9 /* TYSwiftCommon.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -684,7 +1254,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TYSwiftCommon/TYSwiftCommon-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TYSwiftCommon/TYSwiftCommon-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TYSwiftCommon/TYSwiftCommon.modulemap";
 				PRODUCT_MODULE_NAME = TYSwiftCommon;
@@ -700,11 +1270,11 @@
 			};
 			name = Release;
 		};
-		BAA164097C344D5DAF6053310919F6B4 /* Debug */ = {
+		EDF6C55A2826A29A169B1A1B0CC7C488 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2D9D2FE027D9D52020E394F2A1C63CA /* TYSwiftCommon.debug.xcconfig */;
+			baseConfigurationReference = 3F7D32198A5EB963D64D608A2922F60D /* ByebyeUnicode.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -714,52 +1284,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TYSwiftCommon/TYSwiftCommon-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TYSwiftCommon/TYSwiftCommon-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ByebyeUnicode/ByebyeUnicode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ByebyeUnicode/ByebyeUnicode-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TYSwiftCommon/TYSwiftCommon.modulemap";
-				PRODUCT_MODULE_NAME = TYSwiftCommon;
-				PRODUCT_NAME = TYSwiftCommon;
+				MODULEMAP_FILE = "Target Support Files/ByebyeUnicode/ByebyeUnicode.modulemap";
+				PRODUCT_MODULE_NAME = ByebyeUnicode;
+				PRODUCT_NAME = ByebyeUnicode;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C1B4ED71E9F248C37DF820C3A6ECC964 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 068A7B7DA0C9EA7BCFA346FDD64F2A33 /* Pods-TYSwiftCommon_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TYSwiftCommon_Tests/Pods-TYSwiftCommon_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TYSwiftCommon_Tests/Pods-TYSwiftCommon_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -767,11 +1303,11 @@
 			};
 			name = Release;
 		};
-		D21485C08752C69CEF1381EC468473C2 /* Debug */ = {
+		F6A4DB14296249F25A92241C86F72FDE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09DD09A6093CD114FA01943406CB1F7D /* Pods-TYSwiftCommon_Example.debug.xcconfig */;
+			baseConfigurationReference = BFF1CBB1E6012A51A046F4C2C9AD6109 /* ByebyeUnicode.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -781,19 +1317,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TYSwiftCommon_Example/Pods-TYSwiftCommon_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ByebyeUnicode/ByebyeUnicode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ByebyeUnicode/ByebyeUnicode-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TYSwiftCommon_Example/Pods-TYSwiftCommon_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ByebyeUnicode/ByebyeUnicode.modulemap";
+				PRODUCT_MODULE_NAME = ByebyeUnicode;
+				PRODUCT_NAME = ByebyeUnicode;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -806,17 +1341,26 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				916E0404255105F480DC4950B7625F7A /* Debug */,
-				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A73E19CD6D9CF84A17909B4CB8C22938 /* Build configuration list for PBXNativeTarget "Pods-TYSwiftCommon_Example" */ = {
+		78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D21485C08752C69CEF1381EC468473C2 /* Debug */,
-				03DA6AF6CF4CF0EE5F103D09E5990D36 /* Release */,
+				5A9D470458CBC2696633103BC3AF755E /* Debug */,
+				D597913500A568477F588048139E9FE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9992C164C093D02BACF3B5C994280BB1 /* Build configuration list for PBXNativeTarget "ByebyeUnicode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A4DB14296249F25A92241C86F72FDE /* Debug */,
+				EDF6C55A2826A29A169B1A1B0CC7C488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -824,17 +1368,26 @@
 		A77631FA4817DC096A370EFDA07DB449 /* Build configuration list for PBXNativeTarget "Pods-TYSwiftCommon_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7054E74C05B0A2102A4AF2CFF5EEED6C /* Debug */,
-				C1B4ED71E9F248C37DF820C3A6ECC964 /* Release */,
+				76331D199CD2C24D0B766233AF40BE0A /* Debug */,
+				3CE5855C221649C126137ADA19B0C026 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B869A4DD96766FAD58B9617D80D75BF2 /* Build configuration list for PBXNativeTarget "TYSwiftCommon" */ = {
+		BFF0725246F78039931E71FFCAFE9395 /* Build configuration list for PBXNativeTarget "TYSwiftCommon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BAA164097C344D5DAF6053310919F6B4 /* Debug */,
-				9B6C5BA5B6962887F45D8A7E376A534C /* Release */,
+				CC33EEC2A9AF2CB0F42FA8E28538D46C /* Debug */,
+				E285CE029973CF4B0E1D61A0DCAFC6DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB58322B551AAF75C4C31DF7D7C30DC0 /* Build configuration list for PBXNativeTarget "Pods-TYSwiftCommon_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8FA2411F5060BD209FEC06E7152BF0 /* Debug */,
+				6046E23EAB265F83D15593A47652680A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
