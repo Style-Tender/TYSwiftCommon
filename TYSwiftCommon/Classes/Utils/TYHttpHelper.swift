@@ -28,12 +28,12 @@ class TYHttpHelper: NSObject {
                    failure:HttpFailure? = nil,
                    complete:HttpComplete? = nil) {
         
-        TYLog("开始网络请求 GET------>>>>")
-        TYLog("请求URL:" + url)
-        TYLog("请求参数Params：")
-        TYLog(parameters)
-        TYLog("请求头Header：")
-        TYLog(headers)
+        TYLog(message: "开始网络请求 GET------>>>>")
+        TYLog(message: "请求URL:" + url)
+        TYLog(message: "请求参数Params：")
+        TYLog(message: parameters)
+        TYLog(message: "请求头Header：")
+        TYLog(message: headers)
         
         var header : HTTPHeaders? = nil
         
@@ -46,10 +46,10 @@ class TYHttpHelper: NSObject {
             
             case .success(let json):
                 
-                TYLog("GET HTTP OK <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
-                TYLog("请求URL:" + (response.response?.url?.absoluteString ?? ""))
-                TYLog("返回数据:")
-                TYLog(json)
+                TYLog(message: "GET HTTP OK <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
+                TYLog(message: "请求URL:" + (response.response?.url?.absoluteString ?? ""))
+                TYLog(message: "返回数据:")
+                TYLog(message: json)
                 
                 if success != nil {
                     success!(json)
@@ -61,9 +61,9 @@ class TYHttpHelper: NSObject {
                 
             case .failure(let error):
                 
-                TYLog("GET HTTP ERROR <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
-                TYLog("请求URL:" + (response.response?.url?.absoluteString ?? ""))
-                TYLog("ERROR:" + String(error.responseCode ?? -1) + error.localizedDescription)
+                TYLog(message: "GET HTTP ERROR <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
+                TYLog(message: "请求URL:" + (response.response?.url?.absoluteString ?? ""))
+                TYLog(message: "ERROR:" + String(error.responseCode ?? -1) + error.localizedDescription)
                 
                 if failure != nil {
                     failure!(error,true)
@@ -92,12 +92,12 @@ class TYHttpHelper: NSObject {
                     failure:HttpFailure? = nil,
                     complete:HttpComplete? = nil) {
         
-        TYLog("开始网络请求 POST------>>>>")
-        TYLog("请求URL:" + url)
-        TYLog("请求参数Params：")
-        TYLog(parameters)
-        TYLog("请求头Header：")
-        TYLog(headers)
+        TYLog(message: "开始网络请求 POST------>>>>")
+        TYLog(message: "请求URL:" + url)
+        TYLog(message: "请求参数Params：")
+        TYLog(message: parameters)
+        TYLog(message: "请求头Header：")
+        TYLog(message: headers)
         
         var header : HTTPHeaders? = nil
         
@@ -114,10 +114,10 @@ class TYHttpHelper: NSObject {
             
             case .success(let json):
                 
-                TYLog("POST HTTP OK <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
-                TYLog("请求URL:" + (response.response?.url?.absoluteString ?? ""))
-                TYLog("返回数据:")
-                TYLog(json)
+                TYLog(message: "POST HTTP OK <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
+                TYLog(message: "请求URL:" + (response.response?.url?.absoluteString ?? ""))
+                TYLog(message: "返回数据:")
+                TYLog(message: json)
                 
                 if success != nil {
                     success!(json)
@@ -129,9 +129,9 @@ class TYHttpHelper: NSObject {
                 
             case .failure(let error):
                 
-                TYLog("POST HTTP ERROR <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
-                TYLog("请求URL:" + (response.response?.url?.absoluteString ?? ""))
-                TYLog("ERROR:" + String(error.responseCode ?? -1) + error.localizedDescription)
+                TYLog(message: "POST HTTP ERROR <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
+                TYLog(message: "请求URL:" + (response.response?.url?.absoluteString ?? ""))
+                TYLog(message: "ERROR:" + String(error.responseCode ?? -1) + error.localizedDescription)
                 
                 if failure != nil {
                     failure!(error,true)
@@ -161,12 +161,12 @@ class TYHttpHelper: NSObject {
                     failure:HttpFailure? = nil,
                     complete:HttpComplete? = nil) {
         
-        TYLog("开始网络请求 POST_RAW------>>>>")
-        TYLog("请求URL:" + url)
-        TYLog("请求参数Params：")
-        TYLog(parameters)
-        TYLog("请求头Header：")
-        TYLog(headers)
+        TYLog(message: "开始网络请求 POST_RAW------>>>>")
+        TYLog(message: "请求URL:" + url)
+        TYLog(message: "请求参数Params：")
+        TYLog(message: parameters)
+        TYLog(message: "请求头Header：")
+        TYLog(message: headers)
         
         var header : HTTPHeaders? = nil
         
@@ -184,10 +184,10 @@ class TYHttpHelper: NSObject {
             
             case .success(let json):
                 
-                TYLog("POST_RAW HTTP OK <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
-                TYLog("请求URL:" + (response.response?.url?.absoluteString ?? ""))
-                TYLog("返回数据:")
-                TYLog(json)
+                TYLog(message: "POST_RAW HTTP OK <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
+                TYLog(message: "请求URL:" + (response.response?.url?.absoluteString ?? ""))
+                TYLog(message: "返回数据:")
+                TYLog(message: json)
                 
                 if success != nil {
                     success!(json)
@@ -199,9 +199,9 @@ class TYHttpHelper: NSObject {
                 
             case .failure(let error):
                 
-                TYLog("POST_RAW HTTP ERROR <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
-                TYLog("请求URL:" + (response.response?.url?.absoluteString ?? ""))
-                TYLog("ERROR:" + String(error.responseCode ?? -1) + error.localizedDescription)
+                TYLog(message: "POST_RAW HTTP ERROR <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
+                TYLog(message: "请求URL:" + (response.response?.url?.absoluteString ?? ""))
+                TYLog(message: "ERROR:" + String(error.responseCode ?? -1) + error.localizedDescription)
                 
                 if failure != nil {
                     failure!(error,true)
@@ -231,12 +231,12 @@ class TYHttpHelper: NSObject {
                     failure:HttpFailure? = nil,
                     complete:HttpComplete? = nil) {
         
-        TYLog("开始网络请求 PUT------>>>>")
-        TYLog("请求URL:" + url)
-        TYLog("请求参数Params：")
-        TYLog(parameters)
-        TYLog("请求头Header：")
-        TYLog(headers)
+        TYLog(message: "开始网络请求 PUT------>>>>")
+        TYLog(message: "请求URL:" + url)
+        TYLog(message: "请求参数Params：")
+        TYLog(message: parameters)
+        TYLog(message: "请求头Header：")
+        TYLog(message: headers)
         
         var header : HTTPHeaders? = nil
         
@@ -253,10 +253,10 @@ class TYHttpHelper: NSObject {
             
             case .success(let json):
                 
-                TYLog("PUT HTTP OK <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
-                TYLog("请求URL:" + (response.response?.url?.absoluteString ?? ""))
-                TYLog("返回数据:")
-                TYLog(json)
+                TYLog(message: "PUT HTTP OK <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
+                TYLog(message: "请求URL:" + (response.response?.url?.absoluteString ?? ""))
+                TYLog(message: "返回数据:")
+                TYLog(message: json)
                 
                 if success != nil {
                     success!(json)
@@ -268,9 +268,9 @@ class TYHttpHelper: NSObject {
                 
             case .failure(let error):
                 
-                TYLog("PUT HTTP ERROR <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
-                TYLog("请求URL:" + (response.response?.url?.absoluteString ?? ""))
-                TYLog("ERROR:" + String(error.responseCode ?? -1) + error.localizedDescription)
+                TYLog(message: "PUT HTTP ERROR <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
+                TYLog(message: "请求URL:" + (response.response?.url?.absoluteString ?? ""))
+                TYLog(message: "ERROR:" + String(error.responseCode ?? -1) + error.localizedDescription)
                 
                 if failure != nil {
                     failure!(error,true)
@@ -300,12 +300,12 @@ class TYHttpHelper: NSObject {
                     failure:HttpFailure? = nil,
                     complete:HttpComplete? = nil) {
         
-        TYLog("开始网络请求 DELETE------>>>>")
-        TYLog("请求URL:" + url)
-        TYLog("请求参数Params：")
-        TYLog(parameters)
-        TYLog("请求头Header：")
-        TYLog(headers)
+        TYLog(message: "开始网络请求 DELETE------>>>>")
+        TYLog(message: "请求URL:" + url)
+        TYLog(message: "请求参数Params：")
+        TYLog(message: parameters)
+        TYLog(message: "请求头Header：")
+        TYLog(message: headers)
         
         var header : HTTPHeaders? = nil
         
@@ -322,10 +322,10 @@ class TYHttpHelper: NSObject {
             
             case .success(let json):
                 
-                TYLog("DELETE HTTP OK <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
-                TYLog("请求URL:" + (response.response?.url?.absoluteString ?? ""))
-                TYLog("返回数据:")
-                TYLog(json)
+                TYLog(message: "DELETE HTTP OK <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
+                TYLog(message: "请求URL:" + (response.response?.url?.absoluteString ?? ""))
+                TYLog(message: "返回数据:")
+                TYLog(message: json)
                 
                 if success != nil {
                     success!(json)
@@ -337,9 +337,9 @@ class TYHttpHelper: NSObject {
                 
             case .failure(let error):
                 
-                TYLog("DELETE HTTP ERROR <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
-                TYLog("请求URL:" + (response.response?.url?.absoluteString ?? ""))
-                TYLog("ERROR:" + String(error.responseCode ?? -1) + error.localizedDescription)
+                TYLog(message: "DELETE HTTP ERROR <<<<<<<-------- " + String(response.response?.statusCode ?? -1))
+                TYLog(message: "请求URL:" + (response.response?.url?.absoluteString ?? ""))
+                TYLog(message: "ERROR:" + String(error.responseCode ?? -1) + error.localizedDescription)
                 
                 if failure != nil {
                     failure!(error,true)
