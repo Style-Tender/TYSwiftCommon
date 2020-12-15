@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'TYSwiftCommon_Example' do
+  pod 'TYSwiftCommon', :path => '../'
+
+  target 'TYSwiftCommon_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
