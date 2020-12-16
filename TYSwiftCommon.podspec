@@ -26,10 +26,10 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Style-Tender' => '785072254@qq.com' }
   s.source           = { :git => 'https://github.com/Style-Tender/TYSwiftCommon.git', :tag => s.version.to_s }
-  
+  s.swift_version = '4.0'
   s.ios.deployment_target = '11.0'
   s.resources = 'TYSwiftCommon/Assets/DeviceModel.plist'
-  s.source_files = 'TYSwiftCommon/Classes/**/*'
+  s.source_files = 'TYSwiftCommon/Classes/**/*.{swift,h,m}'
   s.dependency 'Alamofire', '~> 5.4.0'
   
 end
