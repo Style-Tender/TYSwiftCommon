@@ -19,7 +19,7 @@ public class TYNavigationBarManager: NSObject {
     }
     
     /// 需要处理的类前缀
-    class var ty_classPrefix: String {
+    public class var ty_classPrefix: String {
         get {
             let str = objc_getAssociatedObject(self, &TYNavigationBarManagerKeys.kTYClassPresfixKey)
             guard str != nil else {
@@ -33,7 +33,7 @@ public class TYNavigationBarManager: NSObject {
     }
     
     /// 默认导航栏背景颜色
-    class var ty_default_navigationbar_background_color : UIColor {
+    public class var ty_default_navigationbar_background_color : UIColor {
         get {
             let color = objc_getAssociatedObject(self, &TYNavigationBarManagerKeys.kTYDefaultBarBackgroundColorKey)
             guard color != nil else {
@@ -47,7 +47,7 @@ public class TYNavigationBarManager: NSObject {
     }
     
     /// 默认导航栏的Tint颜色
-    class var ty_default_navigationbar_tint_color : UIColor {
+    public class var ty_default_navigationbar_tint_color : UIColor {
         get {
             let color = objc_getAssociatedObject(self, &TYNavigationBarManagerKeys.kTYDefaultNavigationBarTintColorKey)
             guard color != nil else {
@@ -61,7 +61,7 @@ public class TYNavigationBarManager: NSObject {
     }
     
     /// 默认导航栏标题的字体颜色
-    class var ty_default_navigationbar_title_text_color : UIColor {
+    public class var ty_default_navigationbar_title_text_color : UIColor {
         get {
             let color = objc_getAssociatedObject(self, &TYNavigationBarManagerKeys.kTYDefaultNavigationBarTitleTextColorKey)
             guard color != nil else {
@@ -75,7 +75,7 @@ public class TYNavigationBarManager: NSObject {
     }
     
     /// 默认导航栏背景透明度
-    class var ty_default_navigationbar_background_alpha : CGFloat {
+    public class var ty_default_navigationbar_background_alpha : CGFloat {
         get {
             let value = objc_getAssociatedObject(self, &TYNavigationBarManagerKeys.kTYDefaultNavigationBarBackgroundAlphaKey)
             guard value != nil else {
@@ -89,7 +89,7 @@ public class TYNavigationBarManager: NSObject {
     }
     
     /// 默认导航栏横线的隐藏
-    class var ty_default_navigationbar_shadow_image_hidden : Bool {
+    public class var ty_default_navigationbar_shadow_image_hidden : Bool {
         get {
             let value = objc_getAssociatedObject(self, &TYNavigationBarManagerKeys.kTYDefaultNavigationBarShadowImageHiddenKey)
             guard value != nil else {

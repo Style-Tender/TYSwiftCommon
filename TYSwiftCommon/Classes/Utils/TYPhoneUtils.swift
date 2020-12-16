@@ -10,13 +10,13 @@ import System
 
 public class TYPhoneUtils: NSObject {
     ///拨打电话
-    class func ty_call(num:String) {
+    public class func ty_call(num:String) {
         let url = "tel:\(num)"
         UIApplication.shared.open(url.ty_url!, options: [String : Any](), completionHandler: nil)
     }
     
     ///手机型号
-    class var ty_phoneModel : String? {
+    public class var ty_phoneModel : String? {
         var systemInfo = utsname()
         uname(&systemInfo)
         let platform = withUnsafePointer(to: &systemInfo.machine.0) { ptr in

@@ -21,7 +21,7 @@ public class TYHttpHelper: NSObject {
     ///   - success: 成功回调
     ///   - failure: 失败回调
     ///   - complete: 请求结束回调
-    class func GET(url:String,
+    public class func GET(url:String,
                    parameters:[String:Any]? = nil,
                    headers:[String:String]? = nil,
                    success:HttpSuccess? = nil,
@@ -85,7 +85,7 @@ public class TYHttpHelper: NSObject {
     ///   - success: 成功回调
     ///   - failure: 失败回调
     ///   - complete: 请求结束回调
-    class func POST(url:String,
+    public class func POST(url:String,
                     parameters:[String:Any]? = nil,
                     headers:[String:String]? = nil,
                     success:HttpSuccess? = nil,
@@ -154,7 +154,7 @@ public class TYHttpHelper: NSObject {
     ///   - success: 成功回调
     ///   - failure: 失败回调
     ///   - complete: 请求结束回调
-    class func POST_RAW(url:String,
+    public class func POST_RAW(url:String,
                     parameters:[String:Any]? = nil,
                     headers:[String:String]? = nil,
                     success:HttpSuccess? = nil,
@@ -224,7 +224,7 @@ public class TYHttpHelper: NSObject {
     ///   - success: 成功回调
     ///   - failure: 失败回调
     ///   - complete: 请求结束回调
-    class func PUT(url:String,
+    public class func PUT(url:String,
                     parameters:[String:Any]? = nil,
                     headers:[String:String]? = nil,
                     success:HttpSuccess? = nil,
@@ -293,7 +293,7 @@ public class TYHttpHelper: NSObject {
     ///   - success: 成功回调
     ///   - failure: 失败回调
     ///   - complete: 请求结束回调
-    class func DELETE(url:String,
+    public class func DELETE(url:String,
                     parameters:[String:Any]? = nil,
                     headers:[String:String]? = nil,
                     success:HttpSuccess? = nil,
