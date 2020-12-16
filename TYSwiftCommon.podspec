@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Style-Tender/TYSwiftCommon.git', :tag => s.version.to_s }
   
   s.ios.deployment_target = '11.0'
-  s.resources = 'TYCommon/Assets/DeviceModel.plist'
+  s.resources = 'TYSwiftCommon/Assets/DeviceModel.plist'
   s.source_files = 'TYSwiftCommon/Classes/**/*'
   s.dependency 'Alamofire', '~> 5.4.0'
   
