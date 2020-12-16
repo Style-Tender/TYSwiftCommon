@@ -9,16 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var textView : UITextView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        textView = UITextView.init(frame: CGRect.init(x: 10, y: 90, width: 200, height: 200));
+        textView?.backgroundColor = UIColor.red
+        textView?.ty_placeholder = "测试"
+        self.view.addSubview(textView!)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        textView?.t_text = "hahahaha";
     }
-
 }
 

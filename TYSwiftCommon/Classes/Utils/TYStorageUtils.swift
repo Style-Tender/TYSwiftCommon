@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TYStorageUtils: NSObject {
+public class TYStorageUtils: NSObject {
     ///保存对象
     class func ty_saveObject(obj:Any,with key:String){
         if (key as NSString).length != 0 {

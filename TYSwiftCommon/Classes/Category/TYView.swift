@@ -7,11 +7,11 @@
 
 import UIKit
 
-func adaptatifHeight(width:CGFloat,uiw:CGFloat,uih:CGFloat) -> CGFloat{
+public func adaptatifHeight(width:CGFloat,uiw:CGFloat,uih:CGFloat) -> CGFloat{
     return width * (uih / uiw)
 }
 
-extension UIView{
+public extension UIView{
     var ty_width : CGFloat {
         get{
             return self.bounds.size.width

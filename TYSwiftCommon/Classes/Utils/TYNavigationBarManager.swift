@@ -7,7 +7,8 @@
 
 import UIKit
 
-class TYNavigationBarManager: NSObject {
+public class TYNavigationBarManager: NSObject {
+    
     private struct TYNavigationBarManagerKeys {
         static var kTYClassPresfixKey = "kTYClassPresfixKey"
         static var kTYDefaultBarBackgroundColorKey = "kTYDefaultBarBackgroundColorKey"
@@ -103,30 +104,7 @@ class TYNavigationBarManager: NSObject {
 }
 
 //MARK: - TYNavigationBar公共方法
-extension UIViewController : SelfAware{
-    static func awake() {
-        swizzleMethod
-    }
-    private static let swizzleMethod: Void = {
-        let originalSelector = #selector(viewWillAppear(_:))
-        let swizzledSelector = #selector(swizzled_viewWillAppear(_:))
-        swizzlingForClass(UIViewController.self, originalSelector: originalSelector, swizzledSelector: swizzledSelector)
-    }()
-    @objc func swizzled_viewWillAppear(_ animated: Bool) {
-        swizzled_viewWillAppear(animated)
-        refresh(animated)
-    }
-    
-    private struct TYViewControllerKeys {
-        static var kTYBarBackgroundColorKey = "kTYBarBackgroundColorKey"
-        static var kTYNavigationBarTintColorKey = "kTYNavigationBarTintColorKey"
-        static var kTYNavigationBarTitleTextColorKey = "kTYNavigationBarTitleTextColorKey"
-        static var kTYNavigationBarBackgroundAlphaKey = "kTYNavigationBarBackgroundAlphaKey"
-        static var kTYNavigationBarShadowImageHiddenKey = "kTYNavigationBarShadowImageHiddenKey"
-        static var kTYNavigationBarBackgroundImageKey = "kTYNavigationBarBackgroundImageKey"
-        static var kTYNavigationBarHiddenKey = "kTYNavigationBarHiddenKey"
-    }
-    
+public extension UIViewController{
     /// 背景图片
     var ty_navigationbar_background_image : UIImage? {
         get {
@@ -231,7 +209,30 @@ extension UIViewController : SelfAware{
 }
 
 //MARK: - TYNavigationBar私有方法
-private extension UIViewController{
+extension UIViewController : TYSelfAware{
+    static func awake() {
+        swizzleMethod
+    }
+    static let swizzleMethod: Void = {
+        let originalSelector = #selector(viewWillAppear(_:))
+        let swizzledSelector = #selector(swizzled_viewWillAppear(_:))
+        swizzlingForClass(UIViewController.self, originalSelector: originalSelector, swizzledSelector: swizzledSelector)
+    }()
+    @objc func swizzled_viewWillAppear(_ animated: Bool) {
+        swizzled_viewWillAppear(animated)
+        refresh(animated)
+    }
+    
+    private struct TYViewControllerKeys {
+        static var kTYBarBackgroundColorKey = "kTYBarBackgroundColorKey"
+        static var kTYNavigationBarTintColorKey = "kTYNavigationBarTintColorKey"
+        static var kTYNavigationBarTitleTextColorKey = "kTYNavigationBarTitleTextColorKey"
+        static var kTYNavigationBarBackgroundAlphaKey = "kTYNavigationBarBackgroundAlphaKey"
+        static var kTYNavigationBarShadowImageHiddenKey = "kTYNavigationBarShadowImageHiddenKey"
+        static var kTYNavigationBarBackgroundImageKey = "kTYNavigationBarBackgroundImageKey"
+        static var kTYNavigationBarHiddenKey = "kTYNavigationBarHiddenKey"
+    }
+    
     ///刷新导航栏
     func refresh(_ animated:Bool) {
         let classPrefix = TYNavigationBarManager.ty_classPrefix

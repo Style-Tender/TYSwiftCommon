@@ -7,11 +7,11 @@
 
 import UIKit
 
-func tyImageNamed(_ name:String) -> UIImage? {
+public func tyImageNamed(_ name:String) -> UIImage? {
     return UIImage.init(named: name)
 }
 
-extension UIImage {
+public extension UIImage {
     func ty_originalImage() -> UIImage {
         return self.withRenderingMode(RenderingMode.alwaysOriginal)
     }

@@ -7,13 +7,13 @@
 
 import UIKit
 
-enum TYButtonLocation : Int {
+public enum TYButtonLocation : Int {
     case titleTop = 0
     case titleLeft
     case titleBottom
 }
 
-extension UIButton {
+public extension UIButton {
     class func ty_init(normalTitle:String? = nil,
                        selectTitle:String? = nil,
                        normalTextColor:UIColor? = nil,

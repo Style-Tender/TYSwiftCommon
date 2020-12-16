@@ -7,10 +7,10 @@
 
 import UIKit
 
-func rgba(_ r:CGFloat,_ g:CGFloat,_ b:CGFloat,_ a:CGFloat) -> UIColor {
+public func rgba(_ r:CGFloat,_ g:CGFloat,_ b:CGFloat,_ a:CGFloat) -> UIColor {
     return UIColor.init(red: r/255, green: g/255, blue: b/255, alpha: a)
 }
 
-func rgb(_ r:CGFloat,_ g:CGFloat,_ b:CGFloat) -> UIColor {
+public func rgb(_ r:CGFloat,_ g:CGFloat,_ b:CGFloat) -> UIColor {
     return UIColor.init(red: r/255, green: g/255, blue: b/255, alpha: 1)
 }

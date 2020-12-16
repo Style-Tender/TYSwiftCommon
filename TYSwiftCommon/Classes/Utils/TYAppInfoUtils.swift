@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TYAppInfoUtils: NSObject {
+public class TYAppInfoUtils: NSObject {
     ///App名称
     class var appName:String? {
         let dict = Bundle.main.infoDictionary

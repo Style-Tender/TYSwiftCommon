@@ -8,19 +8,21 @@
 import UIKit
 
 extension UIApplication {
-    private static let runOnce: Void = {
+    static let runOnce: Void = {
         NothingToSeeHere.harmlessFunction()
     }()
-    open override var next: UIResponder? {
-        return super.next
-    }
+//    open override var next: UIResponder? {
+//        UIApplication.runOnce
+//        return super.next
+//    }
 }
 
-protocol SelfAware : class{
+protocol TYSelfAware : class{
     static func awake()
     static func swizzlingForClass(_ forClass: AnyClass, originalSelector: Selector, swizzledSelector: Selector)
 }
-extension SelfAware {
+
+extension TYSelfAware {
     static func swizzlingForClass(_ forClass: AnyClass, originalSelector: Selector, swizzledSelector: Selector) {
         let originalMethod = class_getInstanceMethod(forClass, originalSelector)
         let swizzledMethod = class_getInstanceMethod(forClass, swizzledSelector)
@@ -41,7 +43,7 @@ class NothingToSeeHere {
         let autoreleasingTypes = AutoreleasingUnsafeMutablePointer<AnyClass>(types)
         objc_getClassList(autoreleasingTypes, Int32(typeCount))
         for index in 0 ..< typeCount {
-            (types[index] as? SelfAware.Type)?.awake()
+            (types[index] as? TYSelfAware.Type)?.awake()
         }
         types.deallocate()
     }

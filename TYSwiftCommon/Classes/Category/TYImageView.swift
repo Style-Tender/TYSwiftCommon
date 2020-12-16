@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIImageView {
+public extension UIImageView {
     class func ty_icon() -> UIImageView {
         let icon = UIImageView.init()
         icon.contentMode = .scaleAspectFill

@@ -8,7 +8,7 @@
 import UIKit
 import CommonCrypto
 
-extension String {
+public extension String {
     var notEmpty : Bool {
         return (self as NSString).length != 0
     }

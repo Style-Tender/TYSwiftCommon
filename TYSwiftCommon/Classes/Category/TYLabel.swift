@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UILabel {
+public extension UILabel {
     class func ty_init(title:String? = nil,
                        textColor:UIColor? = nil,
                        backgroundColor:UIColor? = nil,

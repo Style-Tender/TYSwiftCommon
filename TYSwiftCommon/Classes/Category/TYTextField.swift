@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UITextField {
+public extension UITextField {
     func ty_setPlaceHolder(_ placeholder:String,color:UIColor?){
         var pColor = rgba(0, 0, 0, 0.29);
         if color != nil {

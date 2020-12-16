@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     
     ///注册通知
     func ty_registerNotification(name : String ,selector: Selector) {
@@ -35,10 +35,10 @@ extension UIViewController {
     
     ///pop自己
     func ty_popSelf() {
-        if self.navigationController?.viewControllers.count >= 3 {
+        if self.navigationController?.viewControllers.count ?? 0 >= 3 {
             var vcs = self.navigationController?.viewControllers
-            vcs?.remove(at: vcs?.index(of: self) ?? 0)
-            self.navigationController?.setViewControllers(vcs, animated: false)
+            vcs!.remove(at: vcs?.index(of: self) ?? 0)
+            self.navigationController?.setViewControllers(vcs!, animated: false)
         }
     }
 }

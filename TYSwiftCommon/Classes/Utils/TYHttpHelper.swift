@@ -8,11 +8,11 @@
 import UIKit
 import Alamofire
 
-typealias HttpSuccess = (_ responseObject : Any) -> ()
-typealias HttpFailure = (_ error : Error,_ system : Bool) -> ()
-typealias HttpComplete = (_ success : Bool) -> ()
+public typealias HttpSuccess = (_ responseObject : Any) -> ()
+public typealias HttpFailure = (_ error : Error,_ system : Bool) -> ()
+public typealias HttpComplete = (_ success : Bool) -> ()
 
-class TYHttpHelper: NSObject {
+public class TYHttpHelper: NSObject {
     /// Get请求
     /// - Parameters:
     ///   - url: 请求地址

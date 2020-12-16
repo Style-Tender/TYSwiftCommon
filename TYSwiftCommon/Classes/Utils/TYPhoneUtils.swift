@@ -8,7 +8,7 @@
 import UIKit
 import System
 
-class TYPhoneUtils: NSObject {
+public class TYPhoneUtils: NSObject {
     ///拨打电话
     class func ty_call(num:String) {
         let url = "tel:\(num)"
