@@ -7,6 +7,12 @@
 
 import UIKit
 
+enum TYButtonLocation : Int {
+    case titleTop = 0
+    case titleLeft
+    case titleBottom
+}
+
 extension UIButton {
     class func ty_init(normalTitle:String? = nil,
                        selectTitle:String? = nil,
@@ -35,4 +41,23 @@ extension UIButton {
         return button
     }
     
+    func ty_changeTitleLocation(location:TYButtonLocation, margin:CGFloat) {
+        let imageW = self.imageView?.intrinsicContentSize.width ?? 0
+        let imageH = self.imageView?.intrinsicContentSize.height ?? 0
+        
+        let titleW = self.titleLabel?.intrinsicContentSize.width ?? 0
+        let titleH = self.titleLabel?.intrinsicContentSize.height ?? 0
+        
+        switch location {
+            case .titleTop:
+                self.titleEdgeInsets = UIEdgeInsets.init(top: 0, left: -imageW, bottom: (imageH + margin/2), right: 0)
+                self.imageEdgeInsets = UIEdgeInsets.init(top: (titleH + margin/2), left: 0, bottom: 0, right: -titleW)
+            case .titleLeft:
+                self.titleEdgeInsets = UIEdgeInsets.init(top: 0, left: -(imageW + margin/2), bottom: 0, right:  (imageW + margin/2))
+                self.imageEdgeInsets = UIEdgeInsets.init(top: 0, left: (titleW + margin/2), bottom: 0, right: -(titleW + margin/2))
+            case .titleBottom:
+                self.titleEdgeInsets = UIEdgeInsets.init(top: 0, left: -imageW, bottom: -(imageH + margin/2), right: 0)
+                self.imageEdgeInsets = UIEdgeInsets.init(top: -(titleH + margin/2), left: 0, bottom: 0, right: -titleW)
+        }
+    }
 }

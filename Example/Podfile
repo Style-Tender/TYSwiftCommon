@@ -4,6 +4,7 @@ platform :ios, '11.0'
 
 target 'TYSwiftCommon_Example' do
   pod 'TYSwiftCommon', :path => '../'
+  pod 'Alamofire'
 
   target 'TYSwiftCommon_Tests' do
     inherit! :search_paths

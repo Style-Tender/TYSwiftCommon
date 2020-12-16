@@ -19,6 +19,22 @@ class TYStorageUtils: NSObject {
         let obj = UserDefaults.standard.string(forKey: key) ?? "";
         return obj
     }
+    ///取出Int
+    class func ty_intForKey(_ key:String) -> Int{
+        let obj = UserDefaults.standard.integer(forKey: key);
+        return obj
+    }
+    ///取出字典
+    class func ty_dictionaryForKey(_ key:String) -> [String:Any]{
+        guard let obj = UserDefaults.standard.dictionary(forKey: key) else { return [String:Any]()
+        };
+        return obj
+    }
+    ///取出数组
+    class func ty_arrayForKey(_ key:String) -> [Any]{
+        guard let obj = UserDefaults.standard.array(forKey: key) else { return [Any]()};
+        return obj
+    }
     ///清空所有
     class func ty_clearAll(){
         let dict = UserDefaults.standard.dictionaryRepresentation()

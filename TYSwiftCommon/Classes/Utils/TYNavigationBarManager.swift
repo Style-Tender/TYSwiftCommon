@@ -103,7 +103,20 @@ class TYNavigationBarManager: NSObject {
 }
 
 //MARK: - TYNavigationBar公共方法
-extension UIViewController {
+extension UIViewController : SelfAware{
+    static func awake() {
+        swizzleMethod
+    }
+    private static let swizzleMethod: Void = {
+        let originalSelector = #selector(viewWillAppear(_:))
+        let swizzledSelector = #selector(swizzled_viewWillAppear(_:))
+        swizzlingForClass(UIViewController.self, originalSelector: originalSelector, swizzledSelector: swizzledSelector)
+    }()
+    @objc func swizzled_viewWillAppear(_ animated: Bool) {
+        swizzled_viewWillAppear(animated)
+        refresh(animated)
+    }
+    
     private struct TYViewControllerKeys {
         static var kTYBarBackgroundColorKey = "kTYBarBackgroundColorKey"
         static var kTYNavigationBarTintColorKey = "kTYNavigationBarTintColorKey"
@@ -215,15 +228,10 @@ extension UIViewController {
             self.navigationController?.navigationBar.isHidden = newValue
         }
     }
-    
-    func ty_refresh_navigation_bar(_ animated:Bool) {
-        refresh(animated)
-    }
 }
 
 //MARK: - TYNavigationBar私有方法
-private extension UIViewController {
-    
+private extension UIViewController{
     ///刷新导航栏
     func refresh(_ animated:Bool) {
         let classPrefix = TYNavigationBarManager.ty_classPrefix
