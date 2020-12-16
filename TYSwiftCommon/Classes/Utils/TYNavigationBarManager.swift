@@ -235,6 +235,9 @@ extension UIViewController : TYSelfAware{
     
     ///刷新导航栏
     func refresh(_ animated:Bool) {
+        if !(self.parent is UINavigationController) && !(self.parent is UITabBarController) {
+            return
+        }
         let classPrefix = TYNavigationBarManager.ty_classPrefix
         let selfClass = String(describing: type(of: self))
         if (classPrefix as NSString).length != 0 && !selfClass.hasPrefix(classPrefix){
