@@ -20,7 +20,12 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        textView?.t_text = "hahahaha";
+        let string = "11778778203"
+        if string.ty_isPhoneNumber {
+            print("aaaa")
+        }else {
+            print("bbb")
+        }
     }
 }
 
