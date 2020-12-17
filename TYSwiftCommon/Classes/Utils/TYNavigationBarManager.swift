@@ -302,7 +302,7 @@ extension UIViewController : TYSelfAware{
             return
         }
         
-        titleTextAttributes![NSAttributedString.Key.foregroundColor] = color
+        titleTextAttributes![NSAttributedStringKey.foregroundColor] = color
         self.navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
     }
     
