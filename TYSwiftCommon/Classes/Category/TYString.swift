@@ -59,14 +59,14 @@ public extension String {
         return output as String
     }
     
-    var ty_isPhoneNumber:Bool? {
+    var ty_isPhoneNumber:Bool {
         let regex = "^[1][3456789]\\d{9}$"
         let predicate = NSPredicate.init(format: "SELF MATCHES \(regex)")
         let isValid = predicate.evaluate(with: self)
         return isValid
     }
     
-    var ty_isEmail:Bool? {
+    var ty_isEmail:Bool {
         let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
         let predicate = NSPredicate.init(format: "SELF MATCHES \(regex)")
         let isValid = predicate.evaluate(with: self)
