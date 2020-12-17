@@ -7,18 +7,26 @@
 //
 
 import UIKit
+import TYSwiftCommon
 
-class ViewController: UIViewController {
+class TYViewController: UIViewController {
     var textView : UITextView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textView = UITextView.init(frame: CGRect.init(x: 10, y: 90, width: 200, height: 200));
-        textView?.backgroundColor = UIColor.red
-        textView?.ty_placeholder = "测试"
-        self.view.addSubview(textView!)
+        
+        self.navigationItem.title = "首页"
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        if #available(iOS 13, *) {
+            return .darkContent
+        } else {
+            return .default
+        }
+    }
+    
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let string = "11778778203"
         if string.ty_isPhoneNumber {

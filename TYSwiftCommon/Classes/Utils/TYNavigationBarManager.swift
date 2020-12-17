@@ -296,13 +296,8 @@ extension UIViewController : TYSelfAware{
     
     /// 修改标题栏字体的颜色
     func updateNavigationBarTitleColor(color : UIColor) {
-        var titleTextAttributes = self.navigationController?.navigationBar.titleTextAttributes
-        
-        guard titleTextAttributes != nil else {
-            return
-        }
-        
-        titleTextAttributes![NSAttributedStringKey.foregroundColor] = color
+        var titleTextAttributes = self.navigationController?.navigationBar.titleTextAttributes ?? [NSAttributedString.Key:Any]()
+        titleTextAttributes[NSAttributedString.Key.foregroundColor] = color
         self.navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
     }
     

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TYSwiftCommon'
-  s.version          = '1.0.9'
+  s.version          = '1.0.10'
   s.summary          = '自用的一个开发库，包含常见的使用方法'
 
 # This description is used to generate tags and improve search results.
