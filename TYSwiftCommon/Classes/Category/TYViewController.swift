@@ -15,7 +15,7 @@ public extension UIViewController {
     }
     
     ///发送通知
-    func ty_postNotificationWith(name : String ,params : [String:Any]) {
+    func ty_postNotificationWith(name : String ,params : [String:Any]?) {
         let notification = Notification.init(name: Notification.Name.init(name), object: nil, userInfo: params)
         NotificationCenter.default.post(notification)
     }
