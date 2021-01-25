@@ -257,6 +257,7 @@ extension UIViewController : TYSelfAware{
         let image = self.ty_navigationbar_background_image
         if image == nil {
             updateNavigationBarBackgroundColor(color: self.ty_navigationbar_background_color)
+            updateNavigationBarBackgroundAlpha(alpha: self.ty_navigationbar_alpha)
         }else {
             updateNavigationBarBackgroundImage(image: image)
         }
@@ -264,8 +265,6 @@ extension UIViewController : TYSelfAware{
         updateNavigationBarTintColor(color: self.ty_navigationbar_tint_color)
         
         updateNavigationBarTitleColor(color: self.ty_navigationbar_title_text_color)
-        
-        updateNavigationBarBackgroundAlpha(alpha: self.ty_navigationbar_alpha)
         
         updateNavigationBarShadowImageHidden(hidden: self.ty_navigationbar_shadow_image_hidden)
     }
@@ -296,9 +295,10 @@ extension UIViewController : TYSelfAware{
     
     /// 修改标题栏字体的颜色
     func updateNavigationBarTitleColor(color : UIColor) {
-        var titleTextAttributes = self.navigationController?.navigationBar.titleTextAttributes ?? [NSAttributedString.Key:Any]()
-        titleTextAttributes[NSAttributedString.Key.foregroundColor] = color
-        self.navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
+//        var titleTextAttributes = self.navigationController?.navigationBar.titleTextAttributes ?? [NSAttributedString.Key:Any]()
+//        titleTextAttributes[NSAttributedString.Key.foregroundColor] = color
+//        self.navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: color]
     }
     
     /// 修改导航栏背景透明度
