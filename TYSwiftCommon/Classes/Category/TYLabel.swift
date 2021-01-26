@@ -16,6 +16,7 @@ public extension UILabel {
         label.text = title
         label.textColor = textColor
         label.font = font
+        label.backgroundColor = backgroundColor
         return label
     }
     
