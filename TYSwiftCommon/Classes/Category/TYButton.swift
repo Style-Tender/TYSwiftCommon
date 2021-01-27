@@ -20,7 +20,7 @@ public extension UIButton {
                        selectTextColor:UIColor? = nil,
                        normalImage:UIImage? = nil,
                        selectImage:UIImage? = nil,
-                       backgroundColor:UIColor? = nil,
+                       backgroundColor:UIColor? = .clear,
                        normalBackgroundImage:UIImage? = nil,
                        selectBackgroundImage:UIImage? = nil,
                        font:UIFont? = UIFont.systemFont(ofSize: UIFont.systemFontSize)) -> UIButton {

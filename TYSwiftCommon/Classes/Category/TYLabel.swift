@@ -8,9 +8,9 @@
 import UIKit
 
 public extension UILabel {
-    class func ty_init(title:String? = nil,
-                       textColor:UIColor? = nil,
-                       backgroundColor:UIColor? = nil,
+    class func ty_init(title:String? = "",
+                       textColor:UIColor? = .black,
+                       backgroundColor:UIColor? = .clear,
                        font:UIFont? = UIFont.systemFont(ofSize: UIFont.systemFontSize)) -> UILabel {
         let label = UILabel.init()
         label.text = title
