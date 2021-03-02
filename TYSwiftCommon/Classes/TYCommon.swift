@@ -103,10 +103,10 @@ public var tkBottomMargin : CGFloat {
     return tkIsFullScreenIphone ? 34 : 0
 }
 
-public func TYLog<T>(message:T) {
+public func TYLog<T>(message:T, fileName: String = #file, lineNum : Int = #line) {
 #if DEBUG
-    let fileName = (#file as NSString).lastPathComponent
-    print("\(fileName):(\(#line))-\(message)")
+    let file = (fileName as NSString).lastPathComponent
+    print("[\(Date.init()) \(file)-\(lineNum)]:\(message)")
 #endif
 }
 
@@ -116,18 +116,4 @@ public class TYCommon : NSObject {
             UIApplication.runOnce
         }
     }
-    
-//    static var kEnableKey = "kEnableKey"
-//    public class var enable : Bool {
-//        get {
-//            let result = objc_getAssociatedObject(self, &kEnableKey) as! Bool
-//            return result
-//        }
-//        set{
-//            objc_setAssociatedObject(self, &kEnableKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-//            if newValue {
-//                UIApplication.runOnce
-//            }
-//        }
-//    }
 }
