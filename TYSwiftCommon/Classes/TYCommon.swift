@@ -25,19 +25,6 @@ public func ty_font_bold(_ size:CGFloat) -> UIFont {
 }
 
 // MARK: - 常用常量
-/// 状态栏高度
-public var tkStatusBarH : CGFloat {
-    return UIApplication.shared.statusBarFrame.size.height
-}
-
-/// 导航栏高度
-public var tkNavBarH : CGFloat = 44
-
-/// 导航栏 + 状态栏高度
-public var tkNav_StatusBarH : CGFloat {
-    return tkStatusBarH + tkNavBarH
-}
-
 /// 屏幕宽度
 public var tkScreenW : CGFloat {
     return UIScreen.main.bounds.size.width
@@ -102,6 +89,20 @@ public var tkTopMaigin : CGFloat {
 public var tkBottomMargin : CGFloat {
     return tkIsFullScreenIphone ? 34 : 0
 }
+
+/// 状态栏高度
+public var tkStatusBarH : CGFloat {
+    return tkIsFullScreenIphone ? 44 : 20
+}
+
+/// 导航栏高度
+public var tkNavBarH : CGFloat = 44
+
+/// 导航栏 + 状态栏高度
+public var tkNav_StatusBarH : CGFloat {
+    return tkStatusBarH + tkNavBarH
+}
+
 
 public func TYLog<T>(message:T, fileName: String = #file, lineNum : Int = #line) {
 #if DEBUG
