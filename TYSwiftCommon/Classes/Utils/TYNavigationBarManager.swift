@@ -325,9 +325,9 @@ extension UIViewController : TYSelfAware{
         
         let rect = CGRect.init(x: 0, y: 0, width: width, height: height)
         UIGraphicsBeginImageContext(rect.size)
-        let context = UIGraphicsGetCurrentContext()!
-        context.setFillColor(newColor)
-        context.fill(rect)
+        let context = UIGraphicsGetCurrentContext()
+        context?.setFillColor(newColor)
+        context?.fill(rect)
         let img = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return img
