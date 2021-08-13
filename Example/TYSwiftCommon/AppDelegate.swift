@@ -28,6 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nav = UINavigationController.init(rootViewController: TYViewController.init())
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
+        
+        TYHttpHelper.GET(url: "https://www.baidu.com", parameters: ["1":"1","2":"2"], headers: ["3":"3","4":"4"], success: nil, failure: nil, complete: nil)
+        
         return true
     }
 

@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import TYSwiftCommon
 
 class TYViewController: UIViewController {
     var textView : UITextView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = .red
         self.navigationItem.title = "首页"
     }
     
@@ -25,7 +24,6 @@ class TYViewController: UIViewController {
             return .default
         }
     }
-    
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let string = "11778778203"
@@ -34,6 +32,7 @@ class TYViewController: UIViewController {
         }else {
             print("bbb")
         }
+        tylog("aaaa")
     }
 }
 

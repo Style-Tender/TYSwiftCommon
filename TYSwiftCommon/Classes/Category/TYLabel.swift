@@ -35,7 +35,7 @@ public extension UILabel {
             
             let attributes = [
                 NSAttributedString.Key.strikethroughStyle:1,
-                NSAttributedString.Key.foregroundColor:rgba(153, 153, 153, 1)
+                NSAttributedString.Key.foregroundColor: UIColor.rgba(153, 153, 153, 1)
             ] as [NSAttributedString.Key : Any]
             self.attributedText = NSAttributedString.init(string: self.text!, attributes: attributes)
             self.lineBreakMode = .byTruncatingTail

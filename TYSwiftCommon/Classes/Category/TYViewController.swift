@@ -27,7 +27,7 @@ public extension UIViewController {
     
     ///模态出半透明的控制器
     func ty_presentTransparent(vc:UIViewController,animate:Bool,completion:(()->Void)?){
-        vc.view.backgroundColor = rgba(0, 0, 0, 0.5)
+        vc.view.backgroundColor = .rgba(0, 0, 0, 0.5)
         vc.modalPresentationStyle = .overCurrentContext
         self.modalPresentationStyle = .currentContext
         self.present(vc, animated: animate, completion: completion)
